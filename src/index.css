@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-gray-900 antialiased;
+}
+
+/* Custom frosted glass effect */
+.glass {
+  @apply backdrop-blur-lg bg-white/30;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Definiere die Farbe als CSS-Variable */
+:root {
+  --primary-color: #4269fd;
+  --secondary-color: #95abfe;
+  --tertiary-color: #0336f7;
+}
+
+/* Neue Klasse für die primäre Textfarbe */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Hintergrundfarbe für Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white; /* Weißer Text auf blauem Hintergrund */
+}
+
+.btn-primary:hover {
+  background-color: #365bbf; /* Etwas dunklerer Blau-Ton beim Hover */
+}
+
+.btn-secondary {
+  background-color: var(--tertiary-color);
+  color: white; /* Weißer Text auf blauem Hintergrund */
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: white; /* Weißer Text auf blauem Hintergrund */
+}
