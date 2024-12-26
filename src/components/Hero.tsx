@@ -38,7 +38,7 @@ export default function Hero() {
         }}
       >
         <img
-          src="src/data/warburg_lilie.svg"
+          src="/warburg_lilie.svg"
           alt="Wappen"
           className="w-full h-full object-contain"
         />
