@@ -1,6 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function Hero() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const parallaxOffset = Math.min(scrollPosition * 0.2, 100); // Begrenzt die Bewegung auf 50px
+
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       <div className="absolute inset-0">
@@ -10,6 +25,23 @@ export default function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#4269FD]/95 to-[#4269FD]/10" />
+      </div>
+
+      <div
+        className="absolute opacity-50"
+        style={{
+          width: '200px', // Ursprüngliche Größe des Wappens
+          height: '200px',
+          bottom: `${parallaxOffset}px`,
+          right: '10px',
+          transform: 'scale(4)', // Vergrößert das Wappen um das Vierfache
+        }}
+      >
+        <img
+          src="src/data/warburg_lilie.svg"
+          alt="Wappen"
+          className="w-full h-full object-contain"
+        />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
