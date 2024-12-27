@@ -38,7 +38,7 @@ const programs = [
 export default function Program() {
   return (
     <section id="program" className="py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-16">
           Mein Programm
         </h2>

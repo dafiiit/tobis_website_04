@@ -30,8 +30,7 @@ export default function Vision() {
   ];
 
   return (
-    <section id="vision" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="vision" className="py-24 bg-gray-50" style={{ position: 'relative', zIndex: 1 }}>      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-16">
           Meine Vision für unsere Stadt
         </h2>
