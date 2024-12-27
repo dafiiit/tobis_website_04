@@ -11,6 +11,7 @@ html, body {
   padding: 0; /* Entfernt alle inneren Abstände */
   width: 100%; /* Stellt sicher, dass der Viewport vollständig genutzt wird */
   height: 100%; /* Deckt den gesamten Bildschirm ab */
+  overflow-x: hidden;
 }
 
 body {
