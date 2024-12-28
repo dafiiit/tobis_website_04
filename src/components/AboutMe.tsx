@@ -53,7 +53,7 @@ export default function AboutMe() {
                                 </div>
                                 <br></br>
                                 <img
-                                    src="/public/gallery_images/IMG_0382.jpg"
+                                    src=" /gallery_images/IMG_0382.jpg"
                                     alt="Tobias schlafend"
                                     className="w-full md:w-1/4 rounded-xl md:ml-4"
                                 />
@@ -85,7 +85,7 @@ export default function AboutMe() {
                             </div>
                             <br></br>
                             <img
-                                src="/public/gallery_images/Scherf-56.jpg"
+                                src=" /gallery_images/Scherf-56.jpg"
                                 alt="Familie"
                                 className="w-full md:w-1/4 rounded-xl md:ml-4"
                             />
@@ -102,14 +102,14 @@ export default function AboutMe() {
                                     </p>
                                     <br></br>
                                     <img
-                                        src="/public/gallery_images/IMG_8281.jpg"
+                                        src=" /gallery_images/IMG_8281.jpg"
                                         alt="Kevin"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
                                 </div>
                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                     <img
-                                        src="/public/gallery_images/IMG_9195.jpg"
+                                        src=" /gallery_images/IMG_9195.jpg"
                                         alt="Roxana"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
@@ -124,14 +124,14 @@ export default function AboutMe() {
                                     </p>
                                     <br></br>
                                     <img
-                                        src="/public/gallery_images/IMG_8985.jpg"
+                                        src=" /gallery_images/IMG_8985.jpg"
                                         alt="Riana"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
                                 </div>
                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                     <img
-                                        src="/public/gallery_images/IMG_6287.jpg"
+                                        src=" /gallery_images/IMG_6287.jpg"
                                         alt="Lysandra"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
@@ -163,7 +163,7 @@ export default function AboutMe() {
                                         </p>
                                     </div>
                                     <img
-                                        src="/public/gallery_images/c4114222-df05-44c7-b481-bca22d660c11.JPG"
+                                        src=" /gallery_images/c4114222-df05-44c7-b481-bca22d660c11.JPG"
                                         alt="Kathrin"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
@@ -196,7 +196,7 @@ export default function AboutMe() {
                                 </p>
                             </div>
                             <img
-                                src="/public/gallery_images/2016-02-29 18.09.00.jpg"
+                                src=" /gallery_images/2016-02-29 18.09.00.jpg"
                                 alt="Washington?"
                                 className="w-full md:w-1/4 rounded-xl md:ml-4"
                             />
@@ -225,7 +225,7 @@ export default function AboutMe() {
                                         </p>
                                     </div>
                                     <img
-                                        src="/public/gallery_images/Regionalbeauftragte-2249.jpg"
+                                        src=" /gallery_images/Regionalbeauftragte-2249.jpg"
                                         alt="Regionalbeauftragte"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
@@ -263,7 +263,7 @@ export default function AboutMe() {
                                     </p>
                                     <br></br>
                                     <img
-                                        src="/public/gallery_images/2016-02-29 18.09.00.jpg"
+                                        src=" /gallery_images/2016-02-29 18.09.00.jpg"
                                         alt="Merkel"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
@@ -300,7 +300,7 @@ export default function AboutMe() {
                             </div>
                             <br></br>
                             <img
-                                src="/public/gallery_images/IMG_2613-B.jpg"
+                                src=" /gallery_images/IMG_2613-B.jpg"
                                 alt="Merkel"
                                 className="w-full md:w-1/4 rounded-xl md:ml-4"
                             />
