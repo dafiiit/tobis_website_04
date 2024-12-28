@@ -20,7 +20,7 @@ export default function AboutMe() {
                             <footer className="text-sm mt-2">- Astrid Lindgren</footer>
                         </blockquote>
 
-                        <div className="flex flex-col md:flex-row items-start space-x-4">
+                        <div className="flex justify-center flex-col md:flex-row items-start space-x-4">
                             <p className="text-gray-600 flex-1">
                                 Groß geworden bin ich auf dem Bauernhof meiner Eltern zwischen Welda und Volkmarsen. Harte Arbeit prägte die Familie und den gesamten Alltag. Die Arbeit um das tägliche Brot prägte unseren Alltag und den dieser Generation.  Morgens und abends Kühe melken, Schweine versorgen, Felder bestellen, Haus, Hof, Garten und Kindern betreuen, Runkeln und Zuckerrüben hacken, ernten, verladen, Urlaub war ein Fremdwort.
                                 Großwerden auf einem Bauernhof heißt einerseits Verzicht üben und mitarbeiten, gleichzeitig waren die Früchte unseres Tuns greifbar und unmittelbar.  Trotz oder gerade deswegen habe ich meine Kindheit genossen.
