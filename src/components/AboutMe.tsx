@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutMe() {
     return (
-        <section id="about" className="py-24">
+        <section id="about" className="py-24 bg-gray-50" style={{ position: 'relative', zIndex: 1 }}>
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-16">
                     Über mich
@@ -140,7 +140,7 @@ export default function AboutMe() {
                                     Im Jahr 2018 wurde mir die sehr große Ehre zuteil, vom hessischen Ministerpräsidenten Volker Bouffier persönlich zum Regionalbeauftragten für Nordhessen berufen zu werden. Er schätze meine Kompetenz, meinen Willen Ideen voranzubringen und sah dies Aufgabe gut bei mir betraut. Als Leuchtturm für Nordhessen beriet ich von nun an Bürgermeister von Bad Karlshafen bis Marburg über Förderprogramme der Landesregierung im Ländlichen Raum, überreichte Förderbescheide und war bis zu meiner Wahl als Bürgermeister Teil der Offensive „Land hat Zukunft“.
                                 </p>
                                 <p className="text-gray-600">
-                                    All dies hat mir sehr geholfen, mein Amt als Bürgermeister der Hansestadt Warburg am 1.November 2020 anzutreten und die Erfordernisse von Dörfern und Kernstadt unserer schönen Heimatstadt einschätzen und zukunftsfähig zu machen.
+                                    All dies hat mir sehr geholfen, mein Amt als Bürgermeister der Hansestadt Warburg am 1.November 2020 anzutreten und die Erfordernisse von Dörfern und Kernstadt unserer schönen Heimatstadt einsch��tzen und zukunftsfähig zu machen.
                                 </p>
                             </div>
                             <div>
