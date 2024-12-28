@@ -28,7 +28,7 @@ export default function AboutMe() {
                             <img
                                 src="/gallery_images/IMG_0381.jpg"
                                 alt="Kindheitsbild"
-                                className="w-1/4 md:w-full rounded-xl"
+                                className="w-full md:w-1/4 rounded-xl"
                             />
                         </div>
 
