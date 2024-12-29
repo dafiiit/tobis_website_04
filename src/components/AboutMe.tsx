@@ -7,6 +7,17 @@ export default function AboutMe() {
                 <h2 className="text-3xl font-bold text-center text-primary mb-16">
                     Über mich
                 </h2>
+                <p className="text-gray-600">
+                    Herzlich Willkommen auf meiner Hompage. Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollt.
+                </p>
+                <p className="text-gray-600 flex-1">
+                    Ich freue mich auf Ihren und Euren persönlichen Kontakt.
+                </p>
+                <p className="text-gray-600 flex-1">
+                    Herzlichst
+                    Tobias Scherf
+                </p>
+                <br></br>
 
                 <div className="space-y-12">
                     {/* Kindheit und Jugend */}
