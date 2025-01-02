@@ -30,4 +30,28 @@ export const newsData = [
       'https://www1.wdr.de/nachrichten/warburg-altstadt-100~_v-gseapremiumxl.jpg',
     content: `Bürgermeister Tobias Scherf stellte die Pläne für ein inklusives Wohnquartier am Heilpädagogischen Therapie- und Förderzentrum St. Laurentius-Warburg vor. Geplant sind verschiedene Wohnformen wie betreutes Wohnen und Mehrgenerationenwohnen, ergänzt durch Grünflächen und Gemeinschaftseinrichtungen. Dieses Projekt soll Warburg als zukunftsfähigen Wohnort positionieren und den Bedürfnissen der Bürger gerecht werden.`,
   },
+
+
+  {
+    id: 5,
+    date: '24. Dezember 2024',
+    title: 'Hypercharger entsteht am Göringsgraben',
+    description:
+      'Schnellladepark für E-Autos wird in Warburg gebaut',
+    image: 'https://asc-images.forward-publishing.io/2024/11/15/e257e2d5-a9c0-4793-9c94-c250926fc680.jpeg?rect=213%2C515%2C4260%2C2840&w=2048&auto=format',
+    content: `Warburg - Am Göringsgraben in der Warburger Innenstadt haben jetzt die Bauarbeiten für einen Schnellladepark für Elektroautos begonnen.`,
+    source:
+      'https://www.westfalen-blatt.de/owl/kreis-hoexter/warburg/schnellladepark-bau-e-autos-goeringsgraben-parkplatz-bornebrede-3190781?pid=true',
+  },
+  {
+    id: 4,
+    date: 'August 2024',
+    title: 'Verabschiedung von Heinz-Josef Bodemann nach 30 Jahren Ratsarbeit',
+    description:
+      'Bürgermeister Tobias Scherf ehrt Heinz-Josef Bodemann für seine 30-jährige Tätigkeit im Rat der Hansestadt Warburg.',
+    image: 'https://asc-images.forward-publishing.io/2024/06/26/8ccc7916-808d-4425-8bf6-f4886e7ca820.jpeg?rect=165%2C451%2C3840%2C2160&w=2048&auto=format',
+    content: `Bürgermeister Tobias Scherf verabschiedete Heinz-Josef Bodemann nach dessen 30-jähriger Tätigkeit im Rat der Hansestadt Warburg. In Anerkennung seiner Verdienste überreichte Scherf ihm die höchste Auszeichnung der Stadt und würdigte sein langjähriges Engagement für die kommunale Politik und das Wohl der Bürger.`,
+    source:
+      'https://www.facebook.com/story.php/?id=100000033030350&story_fbid=8141287672548920',
+  },
 ];
