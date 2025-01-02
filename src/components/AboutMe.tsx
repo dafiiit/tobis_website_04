@@ -19,7 +19,7 @@ export default function AboutMe() {
                     Über mich
                 </h2>
                 <p className="text-gray-600">
-                    Herzlich Willkommen auf meiner Hompage. Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollt.
+                    Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollen.
                 </p>
                 <p className="text-gray-600 flex-1">
                     Ich freue mich auf Ihren und Euren persönlichen Kontakt.

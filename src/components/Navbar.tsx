@@ -72,28 +72,28 @@ export default function Navbar() {
         <div className="md:hidden bg-white/90 backdrop-blur-lg">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <a
-              href="#about"
-              className="block px-3 py-2 text-gray-700 hover:text-primary"
-            >
-              Über mich
-            </a>
-            <a
               href="#vision"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
             >
               Vision
             </a>
             <a
-              href="#program"
-              className="block px-3 py-2 text-gray-700 hover:text-primary"
-            >
-              Programm
-            </a>
-            <a
               href="#news"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
             >
-              Aktuelles
+              Viel getan
+            </a>
+            <a
+              href="#program"
+              className="block px-3 py-2 text-gray-700 hover:text-primary"
+            >
+              Viel zu tun
+            </a>
+            <a
+              href="#about"
+              className="block px-3 py-2 text-gray-700 hover:text-primary"
+            >
+              Über mich
             </a>
             <a
               href="#contact"
