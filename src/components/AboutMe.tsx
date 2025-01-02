@@ -19,10 +19,10 @@ export default function AboutMe() {
                     Über mich
                 </h2>
                 <p className="text-gray-600">
-                    Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollen.
+                    Vielen Dank das Sie mich besser kennen lernen wollen – meine <b> Wurzeln </b>, meine <b>Werte </b>und das, <b>was mich antreibt. </b>
                 </p>
-                <p className="text-gray-600 flex-1">
-                    Ich freue mich auf Ihren und Euren persönlichen Kontakt.
+                <p className="text-gray-600">
+                    In den folgenden Abschnitten teile ich mit Ihnen meine Geschichte, meine Familie und die Erfahrungen, die mich geprägt haben.
                 </p>
                 <p className="text-gray-600 flex-1">
                     Herzlichst
