@@ -115,21 +115,23 @@ export default function AboutMe() {
                                     <img
                                         src=" /gallery_images/IMG_8281.jpg"
                                         alt="Kevin"
-                                        className="w-full md:w-1/4 rounded-xl md:ml-4"
+                                        className="w-full md:w-1/4 rounded-xl md:ml-4 order-last"
                                     />
                                 </div>
                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                     <img
                                         src=" /gallery_images/IMG_9195.jpg"
                                         alt="Roxana"
-                                        className="w-full md:w-1/4 rounded-xl md:ml-4"
+                                        className="w-full md:w-1/4 rounded-xl md:ml-4 order-last md:order-first"
                                     />
                                     <br></br>
                                     <p className="text-gray-600">
                                         Meine älteste Tochter Roxana liebt das Leben, unterstützt die Geschwister, hat einen klaren Blick und engagiert sich in vielen Bereichen. Sie tanzte gerne in der Prinzengarde und absolvierte ein Freiwilliges Soziales Jahr in der Karl-Preising-Schule in Bad Arolsen. An dieser inklusiven Schule mit lernschwachen und beeinträchtigten Kindern entdeckte sie ihre  Freude am Lehren . Heute studiert sie in Gießen Lehramt für Sonderpädagogik mit dem Hauptfach Mathematik. Zudem arbeitet sie hier bei uns im Jugenddorf in der Gruppenbetreuung und kann sich so ihr Studium mitfinanzieren. „Mein Vater hat sich immer Zeit für uns Kinder genommen trotz seines ehrenamtlichen Engagements und auch als Bürgermeister. Familie ist ihm sehr wichtig“, meint Roxana.
                                     </p>
+                                    <br></br>
                                 </div>
                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
+                                    <br></br>
                                     <p className="text-gray-600">
                                         Riana hat den guten Blick für die Familie und ist die Kümmerin. Willensstärke zeichnet sie aus, sie kocht und backt gerne und schaut, dass es ihren Omas gutgeht.  Das Lesen von englischsprachigen Büchern ist ihr großes Hobby. Seit früher Kindheit tanzt sie in der Prinzengarde und ist Gardemädchen in der Großen Garde der Volkmarser Karnevalsgesellschaft.  Riana schließt dieses Jahr ihr Fachabitur mit Schwerpunkt Sozialwesen ab und möchte daran ein Freiwilliges Soziales Jahr (FSJ) anschließen. Für Riana ist wichtig: „Damit mein Vater bei seinen vielen Terminen nichts vergisst, erinnere ich ihn manchmal daran, was bei uns so ansteht. Dann hat er die Familie und meine Oma gut im Blick und alle sind gut versorgt.“
                                     </p>
@@ -137,19 +139,20 @@ export default function AboutMe() {
                                     <img
                                         src=" /gallery_images/IMG_8985.jpg"
                                         alt="Riana"
-                                        className="w-full md:w-1/4 rounded-xl md:ml-4"
+                                        className="w-full md:w-1/4 rounded-xl md:ml-4 md:order-last"
                                     />
                                 </div>
                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                     <img
                                         src=" /gallery_images/IMG_6287.jpg"
                                         alt="Lysandra"
-                                        className="w-full md:w-1/4 rounded-xl md:ml-4"
+                                        className="w-full md:w-1/4 rounded-xl md:ml-4 order-last md:order-first"
                                     />
                                     <br></br>
                                     <p className="text-gray-600">
                                         Lysandra hat als jüngste Kind gelernt, sich durchzusetzen. Sie probiert tausend Dinge aus, ist voller Leben und Fröhlichkeit. Sie fragt nicht, sondern macht einfach. Probieren geht bei ihr über studieren. Sie liebt Fußballspiele und Konzerte und spielt selbst Handball in der B-Jugend des TV Külte. Da ist sie Torwart und hat keine Angst vor dem Ball. Wer hinfällt, muss auch wieder aufstehen, ist ihr Motto. Familie, Freunde, Feiern sind ihr sehr wichtig. Zudem ist sie ehrgeizig und engagiert sich  in der Schule, etwa als Präfektin oder Klassensprecherin. In diesem Jahr wird sie einen einjährigen Highschool Aufenthalt in den USA absolvieren. Wow, was hat das Kind für einen Mut. Sie meint: „Schade, dass ich bei der Wahl von Papa nicht in Deutschland bin, ich unterstütze ihn so gerne. Einfach klasse, was er so alles für Jugendliche in Warburg macht.“
                                     </p>
+                                    <br></br>
                                 </div>
                             </div>
                             <div>
@@ -275,7 +278,7 @@ export default function AboutMe() {
                                     Bereits mit 24 Jahren wurde ich ins Volkmarser Stadtparlament gewählt. Dieses Amt gestaltete ich bis zu meiner Wahl als Bürgermeister insgesamt 27 (!) Jahre mit Freude, Leidenschaft und Engagement. In meinen zahlreichen Ämtern, etwa als Ausschussvorsitzender, stellv. Stadtverordnetenvorsteher, stellv. Fraktionsvorsitzender stellte ich unter Beweis, dass Miteinander und Führungsstärke meine Kernkompetenzen sind. So unterstütze ich den damaligen Bürgermeister Hartmut Linnekugel und entwickelte die Stadt Volkmarsen bei der innerstädtischen Verkehrsumgehung, dem wirtschaftlichen Fortbestand, dem Umbau des Marktplatzes und viele andere Themen.
                                 </p>
                                 <p className="text-gray-600">
-                                    Weiterhin hatte ich auf Kreis- und Landesebene viele CDU-Ämter inne:  So war ich Vorsitzender des Landesfachausschuss des Ländlichen Raum, Mitglied des Kreistages und des Kreisausschusses (über 20 Jahre), stellv. Kreisvorsitzender oder Bezirksvorsitzender. Schon immer lag und liegt mit die CDU am Herzen.
+                                    Weiterhin hatte ich auf Kreis- und Landesebene viele CDU-Ämter inne:  So war ich Vorsitzender des Landesfachausschusses des Ländlichen Raum, Mitglied des Kreistages und des Kreisausschusses (über 20 Jahre), stellv. Kreisvorsitzender oder Bezirksvorsitzender. Schon immer lag und liegt mit die CDU am Herzen.
                                 </p>
                                 <br></br>
                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
