@@ -6,8 +6,6 @@ import NewsDetail from './news/NewsDetail';
 
 export default function News() {
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
-
-<<<<<<< HEAD
   useEffect(() => {
     if (selectedNews) {
       // Scroll to the news section smoothly when a card is selected
@@ -17,13 +15,6 @@ export default function News() {
       });
     }
   }, [selectedNews]);
-=======
-  const handleSelectNews = (news: NewsItem) => {
-    // Scroll to the news section before showing the detail
-    document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' });
-    setSelectedNews(news);
-  };
->>>>>>> main
 
   return (
     <section id="news" className="py-24 bg-gray-50">
@@ -35,7 +26,6 @@ export default function News() {
             news={selectedNews}
             onBack={() => setSelectedNews(null)}
           />
-<<<<<<< HEAD
         </div>
       ) : (
         <NewsList
@@ -43,15 +33,6 @@ export default function News() {
           onSelectNews={setSelectedNews}
         />
       )}
-=======
-        ) : (
-          <NewsList
-            news={newsData}
-            onSelectNews={handleSelectNews}
-          />
-        )}
-      </div>
->>>>>>> main
     </section>
   );
 }
