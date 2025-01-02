@@ -13,8 +13,8 @@ export default function AboutMe() {
     const [isPoliticalCareerOpen, setisPoliticalCareerOpen] = useState(false);
 
     return (
-        <section id="about" className="py-24 bg-gray-50" style={{ position: 'relative', zIndex: 1 }}>
-            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-gray-50" style={{ position: 'relative' }}>
+            <div id="about" className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-16">
                     Über mich
                 </h2>
@@ -33,7 +33,10 @@ export default function AboutMe() {
                 <div className="space-y-12">
                     {/* Kindheit und Jugend */}
                     <div className="glass rounded-xl p-8">
-                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={() => setIsChildhoodOpen(!isChildhoodOpen)}>
+                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={(event) => {
+                            event.preventDefault();
+                            setIsChildhoodOpen(!isChildhoodOpen);
+                        }}>
                             Kindheit und Jugend
                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isChildhoodOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                 &#9660;
@@ -60,7 +63,10 @@ export default function AboutMe() {
                                 </div>
                                 <br></br>
                                 <div className="space-y-4">
-                                    <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={() => setisChildhoodExperienceOpen(!isChildhoodExperienceOpen)}>
+                                    <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={(event) => {
+                                        event.preventDefault();
+                                        setisChildhoodExperienceOpen(!isChildhoodExperienceOpen);
+                                    }}>
                                         Prägendes Kindheitserlebnis
                                         <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isChildhoodExperienceOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                             &#9660;
@@ -97,7 +103,10 @@ export default function AboutMe() {
 
                     {/* Familie */}
                     <div className="glass rounded-xl p-8">
-                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={() => setIsFamilyOpen(!isFamilyOpen)}>
+                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={(event) => {
+                            event.preventDefault();
+                            setIsFamilyOpen(!isFamilyOpen);
+                        }}>
                             Familie
                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isFamilyOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                 &#9660;
@@ -132,7 +141,10 @@ export default function AboutMe() {
                                 <div className="space-y-6">
                                     <div>
                                         <br></br>
-                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={() => setisMyChildrenOpen(!isMyChildrenOpen)}>
+                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={(event) => {
+                                            event.preventDefault();
+                                            setisMyChildrenOpen(!isMyChildrenOpen);
+                                        }}>
                                             Meine Kinder
                                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isMyChildrenOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                                 &#9660;
@@ -192,7 +204,10 @@ export default function AboutMe() {
                                     </div>
                                     <div>
                                         <br></br>
-                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={() => setisPartnershipOpen(!isPartnershipOpen)}>
+                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={(event) => {
+                                            event.preventDefault();
+                                            setisPartnershipOpen(!isPartnershipOpen);
+                                        }}>
                                             Partnerschaft
                                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isPartnershipOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                                 &#9660;
@@ -233,7 +248,10 @@ export default function AboutMe() {
 
                     {/* Ausbildung und beruflicher Werdegang */}
                     <div className="glass rounded-xl p-8">
-                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={() => setIsEducationOpen(!isEducationOpen)}>
+                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={(event) => {
+                            event.preventDefault();
+                            setIsEducationOpen(!isEducationOpen);
+                        }}>
                             Ausbildung und beruflicher Werdegang
                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isEducationOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                 &#9660;
@@ -281,7 +299,10 @@ export default function AboutMe() {
                                 <div className="space-y-6">
                                     <div>
                                         <br></br>
-                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={() => setisProfessionOpen(!isProfessionOpen)}>
+                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={(event) => {
+                                            event.preventDefault();
+                                            setisProfessionOpen(!isProfessionOpen);
+                                        }}>
                                             Beruf als Berufung
                                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isProfessionOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                                 &#9660;
@@ -317,7 +338,10 @@ export default function AboutMe() {
                                     </div>
                                     <div>
                                         <br></br>
-                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={() => setisPoliticalCareerOpen(!isPoliticalCareerOpen)}>
+                                        <h4 className="text-xl font-medium text-primary cursor-pointer mb-2" onClick={(event) => {
+                                            event.preventDefault();
+                                            setisPoliticalCareerOpen(!isPoliticalCareerOpen);
+                                        }}>
                                             Politischer Werdegang
                                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isPoliticalCareerOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                                 &#9660;
@@ -371,7 +395,10 @@ export default function AboutMe() {
 
                     {/* Bürgermeister für alle */}
                     <div className="glass rounded-xl p-8">
-                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={() => setIsMayorOpen(!isMayorOpen)}>
+                        <h3 className="text-2xl font-semibold text-primary mb-4 cursor-pointer" onClick={(event) => {
+                            event.preventDefault();
+                            setIsMayorOpen(!isMayorOpen);
+                        }}>
                             Unser Bürgermeister für alle
                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isMayorOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                 &#9660;
