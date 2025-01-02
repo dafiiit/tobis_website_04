@@ -7,6 +7,12 @@ import NewsDetail from './news/NewsDetail';
 export default function News() {
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
 
+  const handleSelectNews = (news: NewsItem) => {
+    // Scroll to the news section before showing the detail
+    document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' });
+    setSelectedNews(news);
+  };
+
   return (
     <section id="news" className="py-24 bg-gray-50">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,7 +26,7 @@ export default function News() {
         ) : (
           <NewsList
             news={newsData}
-            onSelectNews={setSelectedNews}
+            onSelectNews={handleSelectNews}
           />
         )}
       </div>
