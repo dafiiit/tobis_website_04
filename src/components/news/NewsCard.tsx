@@ -8,24 +8,22 @@ interface NewsCardProps {
 
 export default function NewsCard({ news, onReadMore }: NewsCardProps) {
   return (
-    <div className="glass rounded-xl overflow-hidden hover:transform hover:-translate-y-1 transition-all">
+    <div
+      onClick={() => onReadMore(news)}
+      className="glass rounded-xl overflow-hidden hover:transform hover:-translate-y-1 
+                 transition-all cursor-pointer h-[500px] flex flex-col"
+    >
       <img
         src={news.image}
         alt={news.title}
-        className="w-full h-48 object-cover"
+        className="w-full h-56 object-cover flex-shrink-0"
       />
-      <div className="p-6">
-        <span className="text-sm text-primary font-semibold">{news.date}</span>
-        <h3 className="text-xl font-semibold text-primary mt-2 mb-3">
+      <div className="p-6 flex flex-col flex-grow">
+        <span className="text-sm text-primary font-semibold flex-shrink-0">{news.date}</span>
+        <h3 className="text-xl font-semibold text-primary mt-2 mb-3 flex-shrink-0">
           {news.title}
         </h3>
-        <p className="text-gray-600">{news.description}</p>
-        <button
-          onClick={() => onReadMore(news)}
-          className="mt-4 text-primary font-semibold hover:text-blue-700"
-        >
-          Weiterlesen →
-        </button>
+        <p className="text-gray-600 overflow-auto">{news.description}</p>
       </div>
     </div>
   );
