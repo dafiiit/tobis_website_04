@@ -38,8 +38,8 @@ export default function AboutMe() {
                             </p>
                             <br></br>
                             <img
-                                src="/gallery_images/IMG_0381.jpg"
-                                alt="Kindheitsbild"
+                                src="/gallery_images/Bauernhof.png"
+                                alt="Bauernhof"
                                 className="w-full md:w-1/4 rounded-xl block mx-auto"
                             />
                         </div>
@@ -174,7 +174,7 @@ export default function AboutMe() {
                                         </p>
                                     </div>
                                     <img
-                                        src=" /gallery_images/c4114222-df05-44c7-b481-bca22d660c11.JPG"
+                                        src="/gallery_images/e9c6079f-ce5e-40b3-9b79-386228d52fdd.JPG"
                                         alt="Kathrin"
                                         className="w-full md:w-1/4 rounded-xl md:ml-4"
                                     />
@@ -192,10 +192,20 @@ export default function AboutMe() {
                             "Ich habe immer Dinge getan, für die ich noch nicht ganz bereit war. So wächst man."
                             <footer className="text-sm mt-2">- Marissa Mayer</footer>
                         </blockquote>
+                        <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
+                            <div className="flex flex-col space-y-4">
+                                <p className="text-gray-600">
+                                    Meine Allgemeine Hochschulreife (Abitur mit Fachrichtung Wirtschaft)  erlangte ich am Johann-Conrad-Schlaun-Kolleg in Warburg . Schon damals habe ich die Menschen der Stadt Warburg und der Dörfer geschätzt, deren Bürgermeister ich dreißig Jahre später geworden bin.
+                                </p>
+                            </div>
+                            <img
+                                src="/gallery_images/img_9946~01.jpg"
+                                alt="Schlaun-Colleg"
+                                className="w-full md:w-1/4 rounded-xl md:ml-4"
+                            />
+                        </div>
                         <p className="text-gray-600">
-                            Meine Allgemeine Hochschulreife (Abitur mit Fachrichtung Wirtschaft)  erlangte ich am Johann-Conrad-Schlaun-Kolleg in Warburg . Schon damals habe ich die Menschen der Stadt Warburg und der Dörfer geschätzt, deren Bürgermeister ich dreißig Jahre später geworden bin.
-                        </p>
-                        <p className="text-gray-600">
+                            <br></br>
                             Nach Ausbildung und Berufstätigkeit als Versicherungskaufmann beim Gerling-Konzern in Kassel und Korbach, strebte ich nach Weiterentwicklung und begann ein Studium der Wirtschaftswissenschaften in Kassel mit dem Schwerpunkt „Personal und Arbeitsökonomie“. Schon damals lag es mir am Herzen, Menschen gut zu führen und Entwicklungskonzepte für Menschen in Unternehmen zu finden. „Lean Management in der öffentlichen Verwaltung“ war der Titel meiner ersten Diplomarbeit. „Wie kann man Verwaltung besser, effizienter, menschenfreundlicher machen?“, ist auch heute für mich als Bürgermeister eine der wichtigen Fragestellungen.
                         </p>
                         <br></br>
@@ -207,8 +217,8 @@ export default function AboutMe() {
                                 </p>
                             </div>
                             <img
-                                src=" /gallery_images/2016-02-29 18.09.00.jpg"
-                                alt="Washington?"
+                                src=" /gallery_images/University.jpg"
+                                alt="University"
                                 className="w-full md:w-1/4 rounded-xl md:ml-4"
                             />
 
@@ -258,7 +268,7 @@ export default function AboutMe() {
                                     In meiner Jugend initiierte ich als Vorsitzender der Jungen Union die Entfernung eines Zigarettenautomats am Schulweg, machte auf Umweltthemen aufmerksam  und organisierte Jugendaustauschenach der Grenzöffnung in die DDR.
                                 </p>
                                 <p className="text-gray-600">
-                                    Aus  meinem Interesse wurde Leidenschaft. So trat ich 1989 im Zuge der friedlichen Revolution in der DDR in die CDU ein. Ich war und bin Christdemokrat im Herzen. Die Guten müssen bleiben“. Aus diesem Grund halte ich an meiner christdemokratischen Überzeugung auch weiterhin fest.
+                                    Aus  meinem Interesse wurde Leidenschaft. So trat ich 1989 im Zuge der friedlichen Revolution in der DDR in die CDU ein. Ich war und bin christlicher Demokrat im Herzen. Die Guten müssen bleiben“. Aus diesem Grund halte ich an meiner christdemokratischen Überzeugung auch weiterhin fest.
                                 </p>
                                 <br></br>
                                 <p className="text-gray-600">
@@ -322,7 +332,7 @@ export default function AboutMe() {
                                 Als Bürgermeister für alle bin ich
                             </h4>
                             <ul className="list-disc list-inside space-y-2 text-gray-600 pl-4">
-                                <li><b>Christdemokrat im Herzen</b> mit Menschlichkeit und christlich & sozialen Werten</li>
+                                <li><b>Christlicher Demokrat im Herzen</b> mit Menschlichkeit und christlich & sozialen Werten</li>
                                 <li><b>Warburger aus Leidenschaft</b> und erhalte und gestalte gerne die Schönheit der Stadt & der Dörfer</li>
                                 <li><b>Visionär/Gestalter der Zukunft</b> mit dem Gestaltungswillen unsere Region kraftvoll zukunftsfähig voranzubringen</li>
                                 <li><b>Macher mit Zielen</b> mit dem Willen zur zeitnahen Umsetzung und effizienten Verwirklichung in den unterschiedlichen Bereichen</li>

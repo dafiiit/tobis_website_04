@@ -40,7 +40,7 @@ export default function Program() {
     <section id="program" className="py-24">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-16">
-          Mein Programm
+          Viel zu tun
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {programs.map((item, index) => (

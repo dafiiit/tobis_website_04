@@ -12,19 +12,18 @@ export default function Navbar() {
           <div className="flex items-center">
             <Logo />
           </div>
-
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-gray-700 hover:text-primary">
-              Über mich
-            </a>
             <a href="#vision" className="text-gray-700 hover:text-primary">
               Vision
             </a>
-            <a href="#program" className="text-gray-700 hover:text-primary">
-              Programm
-            </a>
             <a href="#news" className="text-gray-700 hover:text-primary">
-              Aktuelles
+              Viel getan
+            </a>
+            <a href="#program" className="text-gray-700 hover:text-primary">
+              Viel zu tun
+            </a>
+            <a href="#about" className="text-gray-700 hover:text-primary">
+              Über mich
             </a>
             <a href="#contact" className="text-gray-700 hover:text-primary">
               Kontakt

@@ -35,13 +35,32 @@ export default function Vision() {
         Meine Vision für unsere Stadt
       </h2>
       <p className="text-gray-600">
-        Ich bin ein Gestalter der Zukunft für Warburg, der mit Blick auf die Vergangenheit die Gegenwart gestaltet, um diese wunderbare Stadt und die Dörfer in die Zukunft zu führen.
-        Meine Vision für das Jahr 2036 (das tausendjährliche Stadtjubiläum der Hansestadt Warburg):
+        Als kraftvoller Gestalter mit Blick auf die Vergangenheit und Tatkraft in der Gegenwart werde ich diese wunderbare Stadt und ihre Dörfer in die Zukunft führen.
       </p>
-      <p className="text-gray-600">
-        Warburg und seine Dörfer präsentieren sich als lebendige, engagierte Gemeinschaften, in denen Menschen für Menschen da sind, das Gemeinwohl gut organisiert wird und die städtische und dörfliche Infrastruktur das Leben lebenswert macht.
-        Der Zusammenhalt der Menschen in Vereinen und im dörflichen Miteinander prägt das Leben positiv und schafft Miteinander und Herzlichkeit. Hier kann und darf sich jeder Wohlfühlen.
-      </p>
+      <br></br>
+      <div className="text-center">
+        <p className="text-gray-600 font-bold">
+          Meine Vision für das Jahr 2036
+        </p>
+        <p className="text-gray-600">
+          (das tausendjährliche Stadtjubiläum der Hansestadt Warburg):
+        </p>
+        <br></br>
+        <p className="text-gray-600">
+          Warburg und seine Dörfer präsentieren sich als <b>lebendige, engagierte Gemeinschaften, </b>       </p>
+        <p className="text-gray-600">
+          in denen Menschen für Menschen da sind,       </p>
+        <p className="text-gray-600">
+          das Gemeinwohl gut organisiert wird       </p>
+        <p className="text-gray-600">
+          und die städtische und dörfliche Infrastruktur das Leben lebenswert macht.       </p>
+        <p className="text-gray-600">
+          Der Zusammenhalt der Menschen in Vereinen und im dörflichen Miteinander       </p>
+        <p className="text-gray-600">
+          prägt das Leben positiv und schafft Miteinander und Herzlichkeit.       </p>
+        <p className="text-gray-600">
+          Hier kann und darf sich jeder Wohlfühlen.      </p>
+      </div>
       <br></br>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
