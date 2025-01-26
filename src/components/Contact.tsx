@@ -12,9 +12,18 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-primary mb-16">
+        <h2 className="text-3xl font-bold text-center text-primary mb-5">
           Kontakt
         </h2>
+        <div className="text-center">
+          <p className="text-gray-600">
+            Mach mit im starken Team des Bürgermeisters - Anruf oder E-Mail genügt.
+          </p>
+          <p className="text-gray-600">
+            Nicht vergessen: 14. September 2025 - Unseren Bürgermeister für Warburg wiederwählen.
+          </p>
+        </div>
+        <br></br>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="glass rounded-xl p-8">
             <h3 className="text-2xl font-semibold text-primary mb-6">
@@ -77,16 +86,16 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>buergermeister@warburg.de</span>
+                  <span>unserbuergermeister@email.de</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span>+49 5641 921600</span>
+                  <span>+49 155 6177 8790</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <span>
-                    Rathaus, Marktplatz 1<br />
+                    Klosterstraße<br />
                     34414 Warburg
                   </span>
                 </div>

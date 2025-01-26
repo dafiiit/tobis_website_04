@@ -15,19 +15,21 @@ export default function AboutMe() {
     return (
         <section className="py-24 bg-gray-50" style={{ position: 'relative' }}>
             <div id="about" className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl font-bold text-center text-primary mb-16">
+                <h2 className="text-3xl font-bold text-center text-primary mb-5">
                     Über mich
                 </h2>
-                <p className="text-gray-600">
-                    Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollen.
-                </p>
-                <p className="text-gray-600 flex-1">
-                    Ich freue mich auf Ihren und Euren persönlichen Kontakt.
-                </p>
-                <p className="text-gray-600 flex-1">
-                    Herzlichst
-                    Tobias Scherf
-                </p>
+                <div className="text-center">
+                    <p className="text-gray-600">
+                        Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollen.
+                    </p>
+                    <p className="text-gray-600 flex-1">
+                        Ich freue mich auf Ihren und Euren persönlichen Kontakt.
+                    </p>
+                    <p className="text-gray-600 flex-1">
+                        Herzlichst
+                        Tobias Scherf
+                    </p>
+                </div>
                 <br></br>
 
                 <div className="space-y-12">
@@ -128,7 +130,7 @@ export default function AboutMe() {
                                             Die Rolle als Vater habe ich die Rolle für meine Kids immer gerne wahrgenommen. Nicht selten eile ich zwischen zwei Warburger Terminen, um die Jüngste zum Handball zu bringen oder die Zweitjüngste bei Auftritten der Volkmarser Prinzengarde zu begleiten. Es ist wunderbar, die Kinder wachsen zu sehen, in ihren Höhen und Tiefen für sie dazu sein, sie zu unterstützen, so dass sie ihren eigenen Weg gehen.
                                         </p>
                                         <p className="text-gray-600">
-                                            Ja, Kinder und Bürgermeisteramt sind unter einen Hut zu bekommen, wenn man kraftvoll und willensstark ist und wenn nicht zögert, sondern sich engagiert. Gerade in Corona-Zeiten war dies eine Herausforderung. Auch meine Kinder waren unterschiedlich stark betroffen und hatten Herausforderungen zu meistern. Dank meiner reichen Erfahrungen als Familienvater ist es eines meiner Herzensanliegen, städtische Aufgaben im Bereich Eltern, Kindern und Familien kraftvoll voranzubringen.
+                                            Ja, Kinder und Bürgermeisteramt sind unter einen Hut zu bekommen, wenn man kraftvoll und willensstark ist und man nicht zögert, sondern sich engagiert. Gerade in Corona-Zeiten war dies eine Herausforderung. Auch meine Kinder waren unterschiedlich stark betroffen und hatten Herausforderungen zu meistern. Dank meiner reichen Erfahrungen als Familienvater ist es eines meiner Herzensanliegen, städtische Aufgaben im Bereich Eltern, Kindern und Familien kraftvoll voranzubringen.
                                         </p>
                                     </div>
                                     <br></br>
@@ -178,7 +180,7 @@ export default function AboutMe() {
                                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                                     <br></br>
                                                     <p className="text-gray-600">
-                                                        Riana hat den guten Blick für die Familie und ist die Kümmerin. Willensstärke zeichnet sie aus, sie kocht und backt gerne und schaut, dass es ihren Omas gutgeht.  Das Lesen von englischsprachigen Büchern ist ihr großes Hobby. Seit früher Kindheit tanzt sie in der Prinzengarde und ist Gardemädchen in der Großen Garde der Volkmarser Karnevalsgesellschaft.  Riana schließt dieses Jahr ihr Fachabitur mit Schwerpunkt Sozialwesen ab und möchte daran ein Freiwilliges Soziales Jahr (FSJ) anschließen. Für Riana ist wichtig: „Damit mein Vater bei seinen vielen Terminen nichts vergisst, erinnere ich ihn manchmal daran, was bei uns so ansteht. Dann hat er die Familie und meine Oma gut im Blick und alle sind gut versorgt.“
+                                                        Riana hat den guten Blick für die Familie und ist die Kümmerin. Willensstärke zeichnet sie aus, sie kocht und backt gerne und schaut, dass es ihren Omas gutgeht.  Das Lesen von englischsprachigen Büchern ist ihr großes Hobby. Seit früher Kindheit tanzt sie in der Prinzengarde und ist Gardemädchen in der Großen Garde der Volkmarser Karnevalsgesellschaft.  Riana schließt dieses Jahr ihr Fachabitur mit Schwerpunkt Sozialwesen ab und möchte daran ein Freiwilliges Soziales Jahr (FSJ) anschließen. Sie ist großer Taylor Swift Fan und fand es toll, dass ich als Vater sie auf einem Konzert begleitet habe. Für Riana ist wichtig: „Damit mein Vater bei seinen vielen Terminen nichts vergisst, erinnere ich ihn manchmal daran, was bei uns so ansteht. Dann hat er die Familie und meine Oma gut im Blick und alle sind gut versorgt.“
                                                     </p>
                                                     <br></br>
                                                     <img
@@ -228,7 +230,13 @@ export default function AboutMe() {
                                                             Es ist nicht immer, einfach einen Bürgermeister als Partner zu haben, sind doch auch die Wochenenden geprägt von Termin und Aufgaben, da ich ja 24/7 im Amt bin. Zeitlichen Freiraum geben zu können und dennoch Zeit miteinander genießen zu dürfen, macht unsere Partnerschaft sicherlich aus. Daher freue ich mich immer sehr, wenn Kathrin die Zeit findet, mich bei Terminen zu begleiten und wir unser Interesse an den Menschen im Warburg Land gemeinsam zeigen können.
                                                         </p>
                                                         <p className="text-gray-600">
-                                                            Wandern ist unsere große Leidenschaft. die wir oft auch gemeinsam genießen können. Wir sind beide von Kunst, Kultur und Konzerten begeistert und genießen unsere Hobbies gerne gemeinsam. Reisen rundet unsere Liebe zur Welt und den Menschen ab und so versuchen wir – trotz meiner terminlichen Verpflichtungen auch Auszeiten gemeinsam oder mit den Kindern, die wir beide in die Partnerschaft einbringen, zu verbringen.
+                                                            Wandern ist unsere große Leidenschaft. die wir oft auch gemeinsam genießen können. Wir sind beide von Kunst, Kultur und Konzerten begeistert und genießen unsere Hobbies gerne gemeinsam. Reisen rundet unsere Liebe zur Welt und den Menschen ab und so versuchen wir – trotz meiner terminlichen Verpflichtungen - auch Auszeiten gemeinsam oder mit den Kindern, die wir beide in die Partnerschaft einbringen, zu verbringen.
+                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            Für Kathrin ist wichtig, dass wir eine Beziehung leben, in der Gleichberechtigung, Entwicklungsräume und gegenseitiger Verantwortung großgeschrieben sind.
+                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            „Tobias ist ein Mann, der Frauen nicht diskriminiert und kleinhält und deren Notwendigkeiten im Blick hat. In Warburg setzt er sich für Gleichberechtigung in Verwaltung und Rat ein und versteht, wie wichtig gut ausgestattete Kindergärten, Schulen, Vereine und kulturelle Angebote für das Wohl aller Einwohner ist,“ so Kathrin.
                                                         </p>
                                                     </div>
                                                     <br></br>
@@ -285,7 +293,7 @@ export default function AboutMe() {
                                     <div className="flex flex-col space-y-4">
 
                                         <p className="text-gray-600">
-                                            Ein Teil meines Studiums verbrachte ich in den USA,in Washington D.C.. Im Zentrum der amerikanischen Politik konnte ich mein Interesse an Politik, der Welt und den Menschen kombinieren und lebte unweit des berühmten Watergate-Gebäudekomplex . Hierkonnte ich mich sprachlich und menschlich weiterentwickeln, die Vielfältigkeit anderen Kulturen erfahren und bei Greenpeace U.S. ein Praktikum machen. Meine „Master“-Arbeit: „Human Ressource & Cross Culture Management“ konnte ich durch diese Erfahrungen mit sehr gutem Ergebnis abschließen. Meine Zeit in Amerika ermöglichte mir einen weltoffenen und toleranten Blick auf das  menschliche Miteinander und kommt mir auch heute noch bei meiner Arbeit als Bürgermeister zugute.
+                                            Ein Teil meines Studiums verbrachte ich in den USA,in Washington D.C.. Im Zentrum der amerikanischen Politik konnte ich mein Interesse an Politik, der Welt und den Menschen kombinieren und lebte unweit des berühmten Watergate-Gebäudekomplex. Hier konnte ich mich sprachlich und menschlich weiterentwickeln, die Vielfältigkeit anderen Kulturen erfahren und bei Greenpeace U.S. ein Praktikum machen. Meine „Master“-Arbeit: „Human Ressource & Cross Culture Management“ konnte ich durch diese Erfahrungen mit sehr gutem Ergebnis abschließen. Meine Zeit in Amerika ermöglichte mir einen weltoffenen und toleranten Blick auf das  menschliche Miteinander und kommt mir auch heute noch bei meiner Arbeit als Bürgermeister zugute.
                                         </p>
                                     </div>
                                     <br></br>
@@ -311,7 +319,7 @@ export default function AboutMe() {
                                         {isProfessionOpen && (
                                             <div className="overflow-hidden transition-max-height duration-300" style={{ maxHeight: isProfessionOpen ? 'none' : '0' }}>
                                                 <p className="text-gray-600">
-                                                    Nach dem Studium wurde ich gleich ins kalte Wasser geworfen: Das Amt als Geschäftsführer der CDU-Kassel-Land und Kassel-Stadt prägten meine politischen Erfahrungen. In 1 ½ Jahren  managte ich erfolgreich eine Oberbürgermeisterwahl und die Landtagswahl in Kassel. Aufgrund meines erfolgreichen Wirkens wurde ich zum Persönlichen Referenten des hessischen Ministers für Umwelt, Landwirtschaft und Forsten, Wilhelm Dietzel berufen. Im Wiesbadener Büro war ich zuständig für den reibungslosen Ablauf der Ministertätigkeit, der Besprechung und Planung von Projekten gemeinsam mit dem Minister am Rande des Landtagsplenum, sowie Ansprechpartner für die Staatsweingüter und das Kloster Eberbach in Eltville. Bis zu meiner Bürgermeisterwahl waren dies beruflich die schönsten und herausforderndsten Jahre. Wilhelm Dietzel erlebte ich als einen Minister, der menschlich handelt, gutes politisches Gespür hat und von dem ich  einen klaren , kooperativen Führungsstill lernen durfte.
+                                                    Nach dem Studium wurde ich gleich ins kalte Wasser geworfen: Das Amt als Geschäftsführer der CDU-Kassel-Land und Kassel-Stadt prägten meine politischen Erfahrungen. In 1 ½ Jahren  managte ich erfolgreich eine Oberbürgermeisterwahl und die Landtagswahl in Kassel. Aufgrund meines erfolgreichen Wirkens wurde ich zum Persönlichen Referenten des hessischen Ministers für Umwelt, Landwirtschaft und Forsten, Wilhelm Dietzel berufen. Im Wiesbadener Büro war ich zuständig für den reibungslosen Ablauf der Ministertätigkeit, der Besprechung und Planung von Projekten gemeinsam mit dem Minister am Rande des Landtagsplenum, sowie Ansprechpartner für die Staatsweingüter und das Kloster Eberbach in Eltville. Bis zu meiner Bürgermeisterwahl waren dies beruflich die schönsten und herausforderndsten Jahre. Wilhelm Dietzel, erlebte ich als einen Minister, der menschlich handelt, gutes politisches Gespür hat und von dem ich  einen klaren , kooperativen Führungsstill lernen durfte.
                                                 </p>
                                                 <p className="text-gray-600">
                                                     Mit der Gründung meiner Familie ging es im Jahr 2003 beruflich zurück in unsere Region. In Kassel war ich ab 2003 im Bereich Landwirtschaft für Controlling, Finanzen, Öffentlichkeitsarbeit und viele Projekte zuständig. Wir entwickelten damals den Landesbetrieb Landwirtschaft zu einem modernen Dienstleister für Beratung, Bildung, Fachinformationen für den ländlichen Raum.
@@ -354,13 +362,13 @@ export default function AboutMe() {
                                                     <footer className="text-sm mt-2">- Mahatma Gandhi</footer>
                                                 </blockquote>
                                                 <p className="text-gray-600">
-                                                    Schon seit frühster Kindheit war ich an politischen Themen interessiert und interessierte  mich für die Entwicklung des Gemeinwesens .  Beim konstruktiven Misstrauensvotum von Helmut Kohl gegenüber Kanzler Helmut Schmidt saß ich abends gebannt am Radio und verfolgte die politische Entwicklung von Helmut Kohl, Gerhard Schröder und unserer Kanzlerin Angela Merkel großem Interesse.
+                                                    Schon seit frühster Kindheit war ich an politischen Themen interessiert und interessierte  mich für die Entwicklung des Gemeinwesens .  Beim konstruktiven Misstrauensvotum von Helmut Kohl gegenüber Kanzler Helmut Schmidt saß ich gebannt am Radio und verfolgte die politische Entwicklung von Helmut Kohl, Gerhard Schröder und unserer Kanzlerin Angela Merkel großem Interesse.
                                                 </p>
                                                 <p className="text-gray-600">
-                                                    In meiner Jugend initiierte ich als Vorsitzender der Jungen Union die Entfernung eines Zigarettenautomats am Schulweg, machte auf Umweltthemen aufmerksam  und organisierte Jugendaustauschenach der Grenzöffnung in die DDR.
+                                                    In meiner Jugend initiierte ich als Vorsitzender der Jungen Union die Entfernung eines Zigarettenautomats am Schulweg, machte auf Umweltthemen aufmerksam  und organisierte Jugendaustausche nach der Grenzöffnung in die DDR.
                                                 </p>
                                                 <p className="text-gray-600">
-                                                    Aus  meinem Interesse wurde Leidenschaft. So trat ich 1989 im Zuge der friedlichen Revolution in der DDR in die CDU ein. Ich war und bin christlicher Demokrat im Herzen. Die Guten müssen bleiben“. Aus diesem Grund halte ich an meiner christdemokratischen Überzeugung auch weiterhin fest.
+                                                    Aus  meinem Interesse wurde Leidenschaft. So trat ich 1989 im Zuge der friedlichen Revolution in der DDR in die CDU ein. Ich war und bin christlicher Demokrat im Herzen. Die Guten müssen bleiben. Aus diesem Grund halte ich an meiner christdemokratischen Überzeugung auch weiterhin fest.
                                                 </p>
                                                 <br></br>
                                                 <p className="text-gray-600">
@@ -372,7 +380,7 @@ export default function AboutMe() {
                                                 <br></br>
                                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                                     <p className="text-gray-600">
-                                                        Über 14 Jahre lang leitete ich den Volkmarser CDU-Stadtverband und entwarf gemeinsam mit meinen Mitstreiteren, insbesondere Thomas Viesehon, das Format „Politischer Aschermittwoch“.  Der Vokmarser „Politische Aschermittwoch“ war überregional bekannt und prominente Gäste waren jährlich an der Tagesordnung. Ob Friedrich Merz, Ministerpräsidenten wie Roland Koch, Volker Bouffier, Thomas Müller, Christian Wulff, Horst Seehofer, Minister wie Thomas de Maizière. Jährlich kamen mehrere tausend Besuchernach Volkmarsen zu dieser Veranstaltung und Höhepunkte waren die Besuche von Bundeskanzlerin Angela Merkel, bei der damals über 3.300 Besucher in der Nordhessenhalle anwesend waren.
+                                                        Über 14 Jahre lang leitete ich den Volkmarser CDU-Stadtverband und entwarf gemeinsam mit meinen Mitstreiteren, insbesondere Thomas Viesehon, das Format „Politischer Aschermittwoch“. Der Volkmarser „Politische Aschermittwoch“ war überregional bekannt und prominente Gäste waren jährlich an der Tagesordnung. Ob Friedrich Merz, Ministerpräsidenten wie Roland Koch, Volker Bouffier, Thomas Müller, Christian Wulff, Horst Seehofer, Minister wie Thomas de Maizière. Jährlich kamen mehrere tausend Besuchernach Volkmarsen zu dieser Veranstaltung und Höhepunkte waren die Besuche von Bundeskanzlerin Angela Merkel, bei der damals über 3.300 Besucher in der Nordhessenhalle anwesend waren.
                                                     </p>
                                                     <br></br>
                                                     <img
@@ -436,25 +444,33 @@ export default function AboutMe() {
                                         Als Bürgermeister für alle bin ich
                                     </h4>
                                     <ul className="list-disc list-inside space-y-2 text-gray-600 pl-4">
-                                        <li><b>Christlicher Demokrat im Herzen</b> mit Menschlichkeit und christlich & sozialen Werten</li>
-                                        <li><b>Warburger aus Leidenschaft</b> und erhalte und gestalte gerne die Schönheit der Stadt & der Dörfer</li>
-                                        <li><b>Visionär/Gestalter der Zukunft</b> mit dem Gestaltungswillen unsere Region kraftvoll zukunftsfähig voranzubringen</li>
-                                        <li><b>Macher mit Zielen</b> mit dem Willen zur zeitnahen Umsetzung und effizienten Verwirklichung in den unterschiedlichen Bereichen</li>
+                                        <li>
+                                            <span className="text-primary font-bold">Christlicher Demokrat im Herzen</span> mit Menschlichkeit und christlich & sozialen Werten
+                                        </li>
+                                        <li>
+                                            <span className="text-primary font-bold">Warburger aus Leidenschaft</span> und erhalte und gestalte gerne die Schönheit der Stadt & der Dörfer
+                                        </li>
+                                        <li>
+                                            <span className="text-primary font-bold">Visionär/Gestalter der Zukunft</span> mit dem Gestaltungswillen, unsere Region kraftvoll zukunftsfähig voranzubringen
+                                        </li>
+                                        <li>
+                                            <span className="text-primary font-bold">Macher mit Zielen</span> mit dem Willen zur zeitnahen Umsetzung und effizienten Verwirklichung in den unterschiedlichen Bereichen
+                                        </li>
                                     </ul>
                                 </div>
                                 <br></br>
                                 <p className="text-gray-600">
-                                    Über Eure Unterstützung und Stimme bei der Bürgermeisterwahl am 14. September 2025 freue ich mich.
+                                    Über Ihre und Eure Unterstützung und Stimme bei der Bürgermeisterwahl am 14. September 2025 freue ich mich sehr.
                                 </p>
                                 <p className="text-gray-600">
-                                    Euer
+                                    Ihr/Euer
                                     Tobias Scherf
                                 </p>
                                 <br></br>
                                 <p className="text-gray-600">
                                     Unser Bürgermeister für alle
                                 </p>
-                                <p className="text-gray-600">
+                                <p className="text-primary">
                                     <b>führungsstark & wegweisend</b>
                                 </p>
                             </div>

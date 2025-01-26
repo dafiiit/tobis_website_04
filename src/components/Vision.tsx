@@ -31,7 +31,7 @@ export default function Vision() {
 
   return (
     <section id="vision" className="py-24 bg-gray-50" style={{ position: 'relative', zIndex: 1 }}>      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="text-3xl font-bold text-center text-primary mb-16">
+      <h2 className="text-3xl font-bold text-center text-primary mb-5">
         Meine Vision für unsere Stadt
       </h2>
       <p className="text-gray-600">
@@ -39,7 +39,7 @@ export default function Vision() {
       </p>
       <br></br>
       <div className="text-center">
-        <p className="text-gray-600 font-bold">
+        <p className="text-4l font-bold text-center text-primary ">
           Meine Vision für das Jahr 2036
         </p>
         <p className="text-gray-600">

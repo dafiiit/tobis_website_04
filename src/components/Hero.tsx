@@ -50,7 +50,7 @@ export default function Hero() {
             Tobias Scherf
           </h1>
           <p className="text-xl md:text-2xl text-white font-light mb-8 text-center">
-            Unser Bürgermeister für alle.
+            Unser Bürgermeister für Warburg.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
