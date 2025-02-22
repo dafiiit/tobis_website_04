@@ -110,12 +110,12 @@ function ProgramDetail({ program, onBack, onNewsSelect }: { program: (typeof pro
 }
 
 
-export default function Program() {
+export default function Program({ onNewsSelect }: { onNewsSelect: (newsId: number) => void }) {
   const [selectedProgram, setSelectedProgram] = useState<(typeof programs)[0] | null>(null);
-  const [selectedNewsId, setSelectedNewsId] = useState<number | null>(null);
 
   const handleNewsSelect = (newsId: number) => {
-    setSelectedNewsId(newsId);
+    onNewsSelect(newsId);
+    setSelectedProgram(null);
   };
 
   return (
@@ -125,7 +125,11 @@ export default function Program() {
           Viel zu tun
         </h2>
         {selectedProgram ? (
-          <ProgramDetail program={selectedProgram} onBack={() => setSelectedProgram(null)} onNewsSelect={handleNewsSelect} />
+          <ProgramDetail
+            program={selectedProgram}
+            onBack={() => setSelectedProgram(null)}
+            onNewsSelect={handleNewsSelect}
+          />
         ) : (
           <div className="grid md:grid-cols-2 gap-8">
             {programs.map((item, index) => (
