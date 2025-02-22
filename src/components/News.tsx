@@ -10,6 +10,7 @@ interface NewsProps {
 
 export default function News({ selectedNewsId }: NewsProps) {
   const [selectedNews, setSelectedNews] = useState<NewsItem | null>(null);
+  const [visibleItems, setVisibleItems] = useState(2); // Changed from 3 to 2
 
   useEffect(() => {
     if (selectedNewsId !== null) {
@@ -20,15 +21,44 @@ export default function News({ selectedNewsId }: NewsProps) {
     }
   }, [selectedNewsId]);
 
+  const visibleNews = newsData.slice(0, visibleItems);
+  const hasMoreItems = visibleItems < newsData.length;
+
+  const handleShowMore = () => {
+    setVisibleItems(prev => Math.min(prev + 2, newsData.length));
+  };
+
+  const handleShowLess = () => {
+    setVisibleItems(2);
+  };
+
   return (
     <section id="news" className="py-24 bg-gray-50">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-16">Viel getan</h2>
 
         <NewsList
-          news={newsData}
+          news={visibleNews}
           onSelectNews={setSelectedNews}
         />
+
+        <div className="text-center mt-8">
+          {hasMoreItems ? (
+            <button
+              onClick={handleShowMore}
+              className="inline-block px-8 py-3 btn-secondary text-white rounded-full hover:btn-secondary:hover transition-colors"
+            >
+              Mehr anzeigen
+            </button>
+          ) : visibleItems > 2 && (
+            <button
+              onClick={handleShowLess}
+              className="inline-block px-8 py-3 btn-secondary text-white rounded-full hover:btn-secondary:hover transition-colors"
+            >
+              Weniger anzeigen
+            </button>
+          )}
+        </div>
 
         {/* Modal for News Detail */}
         {selectedNews && (

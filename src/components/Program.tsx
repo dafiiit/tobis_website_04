@@ -44,7 +44,11 @@ const programs = [
       'Ausbau präventiver Programme',
       'Verbesserung der medizinischen Versorgung',
     ],
-    relatedNews: ['Neue Gesundheitszentren eröffnet', 'Präventionskampagne gestartet'],
+    relatedNews: [
+      'Neue Gesundheitszentren eröffnet',
+      'Präventionskampagne gestartet',
+      'Sebastian Hoppe feiert 25-jähriges Dienstjubiläum'
+    ],
   },
   {
     icon: <TreePine className="w-6 h-6" />,
