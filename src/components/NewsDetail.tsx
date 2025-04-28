@@ -3,7 +3,6 @@ import { ArrowLeft } from 'lucide-react';
 
 interface NewsDetailProps {
   news: {
-    date: string;
     title: string;
     description: string;
     image: string;
@@ -28,13 +27,12 @@ export default function NewsDetail({ news, onBack }: NewsDetailProps) {
           <ArrowLeft className="w-4 h-4 mr-2" />
           Zurück zur Übersicht
         </button>
-        <span className="text-sm text-primary font-semibold">{news.date}</span>
         <h2 className="text-2xl font-semibold text-primary mt-2 mb-4">
           {news.title}
         </h2>
         <div className="prose text-primary max-w-none">
-          <p className="text-primary mb-4">{news.description}</p>
-          <p className="text-gray-600">{news.content}</p>
+          <p className="mb-4 font-semibold">{news.description}</p>
+          <div dangerouslySetInnerHTML={{ __html: news.content }} />
         </div>
       </div>
     </div>
