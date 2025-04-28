@@ -15,8 +15,8 @@ export default function ProgramAndNews() {
 
   return (
     <>
-      <Program onNewsSelect={handleNewsSelect} />
       <News selectedNewsId={selectedNewsId} />
+      <Program onNewsSelect={handleNewsSelect} />
     </>
   );
 }

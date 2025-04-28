@@ -33,7 +33,7 @@ export default function News({ selectedNewsId }: NewsProps) {
   };
 
   return (
-    <section id="news" className="py-24 bg-gray-50">
+    <section id="news" className="py-24">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-16">Viel getan</h2>
 
