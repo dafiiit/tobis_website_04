@@ -6,60 +6,48 @@ import { NewsItem } from '../types/news';
 const programs = [
   {
     icon: <ShieldCheck className="w-6 h-6" />,
-    title: 'Stadtentwicklung & Wohnraum',
+    title: 'Stadt  und Dörfer',
     description:
-      'Mehr bezahlbaren Wohnraum, nachhaltige Stadtentwicklung und attraktive Freizeitangebote.',
+      'Klarer Kurs für eine positive Stadt- und Dorfentwicklung in Warburg',
     image:
-      'https://www.kulturland.org/medium/KKH_Warburg.jpg?m=6694&w=1918&h=1280&g=0',
+      '/images_program/warburg.jpg',
     actions: [
       'Neues Wohnquartier planen',
       'Modernisierung der Altbauten',
       'Ausbau von Freizeitangeboten',
     ],
-    relatedNews: [
-      'Erster Spatenstich für das neue Waldbad in Warburg',
-      'Warburg plant Wohnraum der Zukunft',
-    ],
   },
   {
     icon: <TreePine className="w-6 h-6" />,
-    title: 'Nachhaltigkeit & Energie',
+    title: 'Wirtschaft und Arbeitsplätze',
     description:
-      'Ausbau erneuerbarer Energien, nachhaltige Landwirtschaft und grüne Infrastruktur.',
+      'Klarer Kurs für eine starke Wirtschaft und sichere Arbeitsplätze in Warburg',
     image:
-      'https://www.warburg.de/media/custom/3890_3_1_g.JPG?1678786438',
+      '/images_program/Kinder.JPG',
     actions: [
       'Förderung erneuerbarer Energien ausbauen',
       'Nachhaltige Landwirtschaft unterstützen',
       'Schaffung neuer Grünflächen',
     ],
-    relatedNews: [
-      'Neue Solaranlagen installiert',
-      'Austausch mit der Landwirtschaft in Warburg',
-    ],
   },
   {
     icon: <Heart className="w-6 h-6" />,
-    title: 'Finanzen & Infrastruktur',
+    title: 'Sicherheit und Ordnung',
     description:
-      'Kluges Haushaltsmanagement und Investitionen in Schlüsselprojekte wie das Waldbad.',
+      'Klarer Kurs für Sicherheit und Ordnung in Warburg, damit sich die Menschen wohlfühlen',
     image:
-      'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      '/images_program/image of books.jpg',
     actions: [
       'Effizientes Haushaltsmanagement',
       'Gezielte Investitionen in Infrastruktur',
       'Transparente Finanzplanung',
     ],
-    relatedNews: [
-      'Warburg plant trotz Defizit weitere Investitionen',
-      'Sebastian Hoppe feiert 25-jähriges Dienstjubiläum',
-    ],
   },
   {
     icon: <School className="w-6 h-6" />,
-    title: 'Gesellschaft & Demokratie',
+    title: 'Beteiligung und Miteinander',
     description:
-      'Engagement für eine offene Gesellschaft, Förderung des Ehrenamts und klare Haltung gegen Extremismus.',
+      'Klarer Kurs für Beteiligung und Miteinander der Menschen in Warburg',
     image:
       'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
     actions: [
@@ -67,7 +55,84 @@ const programs = [
       'Förderung von Ehrenamt und Vielfalt',
       'Transparente Verwaltung',
     ],
-    relatedNews: ['Warburg demonstriert für Demokratie'],
+  },
+  {
+    icon: <School className="w-6 h-6" />,
+    title: 'Kultur, Sport und Ehrenamt',
+    description:
+      'Klarer Kurs für Vielfalt in Warburger Kultur, Sport und Ehrenamt',
+    image:
+      '/images_program/Schützenverein.png',
+    actions: [
+      'Stärkung bürgerlicher Partizipation',
+      'Förderung von Ehrenamt und Vielfalt',
+      'Transparente Verwaltung',
+    ],
+  },
+  {
+    icon: <School className="w-6 h-6" />,
+    title: 'Jugend, Familien und Senioren',
+    description:
+      'Klarer Kurs im freundlichen Warburg für Jugend, Familien und Senioren',
+    image:
+      '/images_program/Kinder.JPG',
+    actions: [
+      'Stärkung bürgerlicher Partizipation',
+      'Förderung von Ehrenamt und Vielfalt',
+      'Transparente Verwaltung',
+    ],
+  },
+  {
+    icon: <School className="w-6 h-6" />,
+    title: 'Energie, Klima- und Naturschutz',
+    description:
+      'Klarer Kurs für Energie, Klima- und Naturschutz in einem umweltgerechten Warburg',
+    image:
+      '/images_program/Erde.jpg',
+    actions: [
+      'Stärkung bürgerlicher Partizipation',
+      'Förderung von Ehrenamt und Vielfalt',
+      'Transparente Verwaltung',
+    ],
+  },
+  {
+    icon: <School className="w-6 h-6" />,
+    title: 'Tourismus und Mobilität',
+    description:
+      'Klarer Kurs für modernen Tourismus und Mobilität in Warburg',
+    image:
+      '/images_program/Greenway2work.PNG',
+    actions: [
+      'Stärkung bürgerlicher Partizipation',
+      'Förderung von Ehrenamt und Vielfalt',
+      'Transparente Verwaltung',
+    ],
+  },
+  {
+    icon: <School className="w-6 h-6" />,
+    title: 'Bürgerservice und moderne Verwaltung',
+    description:
+      'Klarer Kurs für modernen Bürgerservice und Digitale Verwaltung in Warburg',
+    image:
+      '/images_program/Coins Investment.jpg',
+    actions: [
+      'Stärkung bürgerlicher Partizipation',
+      'Förderung von Ehrenamt und Vielfalt',
+      'Transparente Verwaltung',
+    ],
+  },
+  {
+    icon: <School className="w-6 h-6" />,
+    title: 'Finanzen und Fördergelder',
+    description:
+      'Klarer Kurs für zukunftssichere Warburger Finanzen',
+    image:
+      '/images_program/Coins Investment.jpg',
+    actions: [
+      'Stärkung bürgerlicher Partizipation',
+      'Förderung von Ehrenamt und Vielfalt',
+      'Transparente Verwaltung',
+    ],
   },
 ];
 
@@ -80,9 +145,6 @@ function ProgramDetail({
   onBack: () => void;
   onNewsSelect: (newsId: number) => void;
 }) {
-  const relatedNews = newsData.filter((newsItem) =>
-    program.relatedNews.includes(newsItem.title)
-  );
 
   return (
     <div
@@ -107,29 +169,6 @@ function ProgramDetail({
                   <li key={index}>{action}</li>
                 ))}
               </ul>
-            </div>
-            <div>
-              <h4 className="text-xl font-semibold mb-2">
-                Was ich schon getan habe
-              </h4>
-              {relatedNews.length > 0 ? (
-                <ul className="text-gray-600">
-                  {relatedNews.map((newsItem) => (
-                    <li key={newsItem.id} className="mb-2">
-                      <button
-                        onClick={() => onNewsSelect(newsItem.id)}
-                        className="text-primary hover:underline"
-                      >
-                        {newsItem.title}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-gray-600">
-                  Keine passenden Nachrichten gefunden.
-                </p>
-              )}
             </div>
           </div>
           <button onClick={onBack} className="mt-6 btn-primary">
@@ -170,9 +209,12 @@ export default function Program({
   return (
     <section id="program" className="py-24">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-primary mb-16">
-          Viel zu tun
+        <h2 className="text-3xl font-bold text-center text-primary mb-8">
+          Wahlprogramm
         </h2>
+        <h1 className="text-lg font-semibold text-center text-gray-700 mb-8">
+          Kernforderungen meines Wahlprogramms:
+        </h1>
         {selectedProgram ? (
           <ProgramDetail
             program={selectedProgram}
