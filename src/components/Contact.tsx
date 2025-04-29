@@ -104,17 +104,6 @@ export default function Contact() {
 
             <div className="glass rounded-xl p-8">
               <h3 className="text-2xl font-semibold text-primary mb-6">
-                Bürgersprechstunde
-              </h3>
-              <p className="text-gray-600">
-                Jeden Donnerstag von 14:00 - 17:00 Uhr
-                <br />
-                Terminvereinbarung erwünscht
-              </p>
-            </div>
-
-            <div className="glass rounded-xl p-8">
-              <h3 className="text-2xl font-semibold text-primary mb-6">
                 Folgen Sie mir
               </h3>
               <div className="flex space-x-6">
