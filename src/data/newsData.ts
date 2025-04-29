@@ -3,7 +3,7 @@ export const newsData = [
     id: 1,
     title: 'Neues Waldbad',
     description: 'Rekordförderung für die größte Investition der Stadtgeschichte',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg',
+    image: '/images_milestones/Waldbad.jpg',
     content: `„Ein Bad für ganz Warburg – modern, barrierefrei, zukunftssicher.“
     Tobias Scherf, Bürgermeister
 
@@ -24,7 +24,7 @@ export const newsData = [
     id: 2,
     title: 'Dorfentwicklung ist Chefsache',
     description: 'Projekte aus der Mitte unserer Dörfer',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Restaurant.JPG', 
     content: `Für mich als Bürgermeister ist klar: Die Entwicklung unserer Dörfer gehört in die erste Reihe politischer Verantwortung. Deshalb habe ich zahlreiche Projekte gemeinsam mit engagierten Dorfgemeinschaften unterstützt und begleitet.
 
     **Dorftreff Dössel**
@@ -48,7 +48,7 @@ export const newsData = [
     id: 3,
     title: 'Kultur fördern. Gemeinschaft stärken.',
     description: 'Mein Einsatz für ein lebendiges Warburg',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Kulturpreis.jpg',
     content: `Kultur ist für mich weit mehr als Unterhaltung – sie verbindet Menschen, schafft Identität und stärkt unser Miteinander. Deshalb habe ich mich als Bürgermeister in den vergangenen Jahren mit großer Überzeugung für die kulturelle Vielfalt in unserer Stadt und den Dörfern eingesetzt.
 
     Ich habe kulturelle Angebote aktiv gefördert – finanziell, organisatorisch und mit persönlichem Einsatz.
@@ -71,7 +71,7 @@ export const newsData = [
     id: 4,
     title: 'Innenstadt stärken. Altstadt bewahren.',
     description: 'Mein Einsatz für ein lebendiges Warburg',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Demokratie.jpg', // Fallback image
     content: `Als Bürgermeister habe ich mich intensiv dafür eingesetzt, unsere Innenstadt zu beleben, Leerstände zu verringern und die historische Altstadt zu erhalten. Mein Ziel: eine Innenstadt, die lebendig, attraktiv und identitätsstiftend ist – für alle Generationen.
 
 **Einzelhandel gefördert – Leerstand bekämpft**
@@ -92,7 +92,7 @@ Die Pflege und der Erhalt unserer denkmalgeschützten Altstadt sind mir ein zent
     id: 5,
     title: 'Feuerwehr stärken. Sicherheit gewährleisten.',
     description: 'Mein Einsatz für den Brandschutz in Warburg',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/FreiwilligeFeuerwehr.jpg',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich mich konsequent dafür eingesetzt, den Investitionsstau bei unseren Feuerwehren abzubauen. Die Sicherheit unserer Bürgerinnen und Bürger hat für mich höchste Priorität. Daher habe ich umfassende Maßnahmen ergriffen, um die Ausstattung und Infrastruktur unserer Feuerwehren zu modernisieren und zukunftsfähig zu gestalten.
 
 **Modernisierung der Feuerwehrgerätehäuser**
@@ -116,7 +116,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, den Brandsch
     id: 6,
     title: 'Demokratie leben. Vielfalt fördern.',
     description: 'Mein Einsatz für Zusammenhalt in Warburg',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Demokratie.jpg',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich es mir zur Aufgabe gemacht, Demokratie, Vielfalt und Toleranz in unserer Stadt nicht nur zu schützen, sondern aktiv zu stärken. Seit 2023 ist Warburg Teil des Bundesprogramms „Demokratie leben!“, das ich gemeinsam mit engagierten Partnern in unserer Stadt erfolgreich auf den Weg gebracht habe.
 
 **Demokratie fördern – von jung bis alt**
@@ -136,7 +136,7 @@ Ein echtes Highlight war das Kinofilmprojekt „Romeo und Julia – Warburg wird
     id: 7,
     title: 'Mobilität gestalten. Wege verbinden.',
     description: 'Mein Einsatz für eine zukunftsfähige Infrastruktur',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Fahrrad.jpg',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich mich seit 2020 intensiv dafür eingesetzt, die Mobilität in unserer Stadt nachhaltig zu verbessern. Mein Ziel war es, sichere und attraktive Verkehrswege für alle Verkehrsteilnehmer zu schaffen und dabei besonders den Radverkehr zu fördern.
 
 **Radverkehrskonzept als Grundlage für Förderungen**
@@ -158,7 +158,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, die Mobilit�
     id: 8,
     title: 'Tourismus stärken. Natur erleben.',
     description: 'Mein Einsatz für Warburg als Reiseziel',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Natur_baum.jpg', 
     content: `**Übernachtungszahlen deutlich gesteigert**
 Trotz der Herausforderungen durch die Corona-Pandemie konnten wir die Übernachtungszahlen in Warburg erheblich steigern. Im Jahr 2022 erreichten wir erstmals über 100.000 Gästeübernachtungen, was einer Steigerung von 25,5 % im Vergleich zum Vorkrisenjahr 2019 entspricht. Diese positive Entwicklung liegt deutlich über dem Durchschnitt in Nordrhein-Westfalen und zeigt, dass unsere Investitionen in touristische Infrastruktur und Angebote Früchte tragen.
 
@@ -185,7 +185,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, Warburg als 
     id: 9,
     title: 'Klimaschutz stärken. Zukunft sichern.',
     description: 'Mein Einsatz für ein nachhaltiges Warburg',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/World.jpg', 
     content: `Als Bürgermeister der Hansestadt Warburg habe ich seit 2020 den Klimaschutz zu einem zentralen Anliegen meiner Amtszeit gemacht. Durch gezielte Maßnahmen und Förderprogramme konnten wir bedeutende Fortschritte in den Bereichen erneuerbare Energien, nachhaltige Mobilität und Naturschutz erzielen.
 
 **Integriertes Klimaschutzkonzept als strategische Grundlage**
@@ -211,7 +211,7 @@ Mit diesen Initiativen und Projekten haben wir in Warburg konkrete Schritte unte
     id: 10,
     title: 'Jugend einbinden, fördern und Gehör verschaffen',
     description: 'Mein Einsatz für die junge Generation in Warburg',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Skateboard.jpg', 
     content: `**„Jugend entscheidet“ – Skatepark als sichtbares Ergebnis gelebter Beteiligung**
 Im Dezember 2020 wurde Warburg als eine von zehn Kommunen für das Programm „Jugend entscheidet“ der Hertie-Stiftung ausgewählt. Auf meine Initiative hin bewarb sich die Stadt für dieses Programm, um Jugendlichen zwischen 12 und 15 Jahren die Möglichkeit zu geben, ein kommunalpolitisches Thema auszuwählen, zu bearbeiten und zur Entscheidung zu bringen.
 
@@ -228,9 +228,9 @@ Diese Projekte und Maßnahmen zeigen, wie wichtig es ist, jungen Menschen Räume
   },
   {
     id: 11,
-    title: 'Laurentiushöhe & Zuckerfabrik', // Abgeleiteter Titel
+    title: 'Stadtentwicklung & Wohnen', // Abgeleiteter Titel
     description: 'Zukunftsorientierte Stadtentwicklung', // Abgeleitete Beschreibung
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/LaurentiusHöhe.jpg', 
     content: `Als Bürgermeister der Hansestadt Warburg habe ich mich für eine zukunftsorientierte Stadtentwicklung eingesetzt, die sowohl soziale Inklusion als auch nachhaltige Flächennutzung fördert. Zwei herausragende Projekte in diesem Kontext sind die Entwicklung des inklusiven Quartiers Laurentiushöhe und die Revitalisierung des ehemaligen Zuckerfabrikgeländes.
 
 **Laurentiushöhe – Ein Quartier mit Seele**
@@ -251,7 +251,7 @@ Mit diesen Initiativen setzen wir klare Zeichen für eine moderne und inklusive 
     id: 12,
     title: 'Wald bewahren. Zukunft pflanzen.',
     description: 'Mein Einsatz für den Warburger Stadtwald',
-    image: 'https://warburg-news.de/images/2024/89/jubiwar24.jpg', // Fallback image
+    image: '/images_milestones/Natur_baum.jpg', // Fallback image
     content: `Als Bürgermeister der Hansestadt Warburg und Vorsitzender der Verbandsversammlung des Gemeindeforstverbandes Willebadessen habe ich mich seit 2020 intensiv für den Schutz und die nachhaltige Entwicklung unseres Stadtwaldes eingesetzt. Der Warburger Stadtwald umfasst rund 2.300 Hektar und zählt zu den größten zusammenhängenden Waldgebieten in Ostwestfalen.
 
 **Kalamitäten und Wiederaufforstung**

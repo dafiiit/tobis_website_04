@@ -12,7 +12,7 @@ export default function NewsCard({ news, onReadMore }: NewsCardProps) {
       <img
         src={news.image}
         alt={news.title}
-        className="w-full h-48 object-cover"
+        className="w-full h-48 object-cover object-top"
       />
       <div className="p-6">
         <span className="text-sm text-primary font-semibold">{news.date}</span>

@@ -49,7 +49,7 @@ const programs = [
     description:
       'Klarer Kurs für Beteiligung und Miteinander der Menschen in Warburg',
     image:
-      'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      '/images_program/DemokratieLeben.jpg',
     actions: [
       'Stärkung bürgerlicher Partizipation',
       'Förderung von Ehrenamt und Vielfalt',
@@ -62,7 +62,7 @@ const programs = [
     description:
       'Klarer Kurs für Vielfalt in Warburger Kultur, Sport und Ehrenamt',
     image:
-      '/images_program/Schützenverein.png',
+      '/images_program/Schuetzenfest.jpeg',
     actions: [
       'Stärkung bürgerlicher Partizipation',
       'Förderung von Ehrenamt und Vielfalt',
@@ -114,7 +114,7 @@ const programs = [
     description:
       'Klarer Kurs für modernen Bürgerservice und Digitale Verwaltung in Warburg',
     image:
-      '/images_program/Coins Investment.jpg',
+      '/images_program/Digitales Verwaltung.JPEG',
     actions: [
       'Stärkung bürgerlicher Partizipation',
       'Förderung von Ehrenamt und Vielfalt',
@@ -127,7 +127,7 @@ const programs = [
     description:
       'Klarer Kurs für zukunftssichere Warburger Finanzen',
     image:
-      '/images_program/Coins Investment.jpg',
+      '/images_program/Wirtschaft Arbeit.PNG',
     actions: [
       'Stärkung bürgerlicher Partizipation',
       'Förderung von Ehrenamt und Vielfalt',
