@@ -21,8 +21,8 @@ export default function Hero() {
       <div className="absolute inset-0">
         <img
           src="https://asc-images.forward-publishing.io/2024/05/30/94423ee3-65c3-4629-9f0a-36af8390a805.jpeg?rect=0%2C50%2C3195%2C2130&w=1024&auto=compress%2Cformat"
-          alt="City Hall"
-          className="w-full h-full object-cover"
+          alt="Tobias"
+          className="w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#4269FD]/95 to-[#4269FD]/10" />
       </div>
