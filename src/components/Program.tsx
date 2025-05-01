@@ -1,9 +1,36 @@
 import React, { useState } from 'react';
-import { ShieldCheck, School, Heart, TreePine } from 'lucide-react';
+import {
+  ShieldCheck,
+  School,
+  Heart,
+  TreePine,
+  Home,
+  Briefcase,
+  Users,
+  Palette,
+  Trophy,
+  HeartHandshake,
+  Baby,
+  Accessibility,
+  Leaf,
+  Wind,
+  Map,
+  Bike,
+  Server,
+  Banknote,
+  Building,
+  Factory,
+  Handshake,
+  PersonStanding,
+  Zap,
+  FileText,
+  PiggyBank,
+  Landmark
+} from 'lucide-react';
 
 const programs = [
   {
-    icon: <ShieldCheck className="w-6 h-6" />,
+    icon: <Home className="w-6 h-6" />,
     title: 'Stadt  und Dörfer',
     description:
       'Klarer Kurs für eine positive Stadt- und Dorfentwicklung in Warburg',
@@ -15,12 +42,12 @@ const programs = [
     `,
   },
   {
-    icon: <TreePine className="w-6 h-6" />,
+    icon: <Briefcase className="w-6 h-6" />,
     title: 'Wirtschaft und Arbeitsplätze',
     description:
       'Klarer Kurs für eine starke Wirtschaft und sichere Arbeitsplätze in Warburg',
     image:
-      '/images_program/Kinder.JPG',
+      '/images_program/Haushalt.jpg',
     details: `
       ### „Infrastruktur stärken und Wirtschaft voranbringen.“
       Unsere Stadt lebt von den Menschen, die hier arbeiten, Unternehmen führen oder Ausbildungsplätze schaffen. Ich als Bürgermeister setze mich dafür ein, dass Warburg ein starker Wirtschaftsstandort bleibt – mit guten Rahmenbedingungen für Unternehmen, Handwerk, Einzelhandel und Landwirtschaft. Über unseren Wirtschaftsförderer stehen wir als verlässliche Ansprechpartner zur Seite, auch bei individuellen Weiterentwicklungswünschen.
@@ -28,7 +55,7 @@ const programs = [
     `,
   },
   {
-    icon: <Heart className="w-6 h-6" />,
+    icon: <ShieldCheck className="w-6 h-6" />,
     title: 'Sicherheit und Ordnung',
     description:
       'Klarer Kurs für Sicherheit und Ordnung in Warburg, damit sich die Menschen wohlfühlen',
@@ -41,7 +68,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Users className="w-6 h-6" />,
     title: 'Beteiligung und Miteinander',
     description:
       'Klarer Kurs für Beteiligung und Miteinander der Menschen in Warburg',
@@ -55,7 +82,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Palette className="w-6 h-6" />,
     title: 'Kultur, Sport und Ehrenamt',
     description:
       'Klarer Kurs für Vielfalt in Warburger Kultur, Sport und Ehrenamt',
@@ -70,7 +97,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Baby className="w-6 h-6" />,
     title: 'Jugend, Familien und Senioren',
     description:
       'Klarer Kurs im freundlichen Warburg für Jugend, Familien und Senioren',
@@ -83,7 +110,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Leaf className="w-6 h-6" />,
     title: 'Energie, Klima- und Naturschutz',
     description:
       'Klarer Kurs für Energie, Klima- und Naturschutz in einem umweltgerechten Warburg',
@@ -97,7 +124,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Map className="w-6 h-6" />,
     title: 'Tourismus und Mobilität',
     description:
       'Klarer Kurs für modernen Tourismus und Mobilität in Warburg',
@@ -110,7 +137,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Server className="w-6 h-6" />,
     title: 'Bürgerservice und moderne Verwaltung',
     description:
       'Klarer Kurs für modernen Bürgerservice und Digitale Verwaltung in Warburg',
@@ -123,7 +150,7 @@ const programs = [
     `,
   },
   {
-    icon: <School className="w-6 h-6" />,
+    icon: <Banknote className="w-6 h-6" />,
     title: 'Finanzen und Fördergelder',
     description:
       'Klarer Kurs für zukunftssichere Warburger Finanzen',
