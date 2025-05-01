@@ -135,6 +135,14 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <div className="text-center text-gray-600 mt-12">
+          <p>&copy; 2024 Tobias Scherf. Alle Rechte vorbehalten.</p>
+          <p>
+            <a href="/impressum.html" className="hover:text-primary underline">
+              Impressum
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
