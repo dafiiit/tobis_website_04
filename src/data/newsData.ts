@@ -4,27 +4,27 @@ export const newsData = [
     title: 'Neues Waldbad',
     description: 'Rekordförderung für die größte Investition der Stadtgeschichte',
     image: '/images_milestones/Waldbad.jpg',
-    content: `„Ein Bad für ganz Warburg – modern, barrierefrei, zukunftssicher.“
-    Tobias Scherf, Bürgermeister
+    content: `<p>„Ein Bad für ganz Warburg – modern, barrierefrei, zukunftssicher.“<br />
+    <em>Tobias Scherf, Bürgermeister</em></p>
 
-    Als Bürgermeister der Hansestadt Warburg habe ich das Projekt „Neues Waldbad“ von Anfang an mit vollem Einsatz vorangetrieben – von der Idee über die Planung bis zur Finanzierung.
+    <p>Als Bürgermeister der Hansestadt Warburg habe ich das Projekt „Neues Waldbad“ von Anfang an mit vollem Einsatz vorangetrieben – von der Idee über die Planung bis zur Finanzierung.</p>
 
-    **Fördermittel – gemeinsam viel erreicht**
-    Dank intensiver Gespräche und guter Netzwerkarbeit konnten wir rund 16,2 Millionen Euro an Fördermitteln sichern: 10,2 Mio. Euro vom EFRE, 6 Mio. Euro vom Bund. Mein besonderer Dank gilt Ministerin Ina Scharrenbach und MdL Matthias Goeken für ihre starke Unterstützung.
+    <p><strong>Fördermittel – gemeinsam viel erreicht</strong><br />
+    Dank intensiver Gespräche und guter Netzwerkarbeit konnten wir rund 16,2 Millionen Euro an Fördermitteln sichern: 10,2 Mio. Euro vom EFRE, 6 Mio. Euro vom Bund. Mein besonderer Dank gilt Ministerin Ina Scharrenbach und MdL Matthias Goeken für ihre starke Unterstützung.</p>
 
-    **Ein Bad für alle – modern, inklusiv, ganzjährig nutzbar**
-    Wir schaffen ein neues Hallenbad und ein saniertes Freibad – generationengerecht, barrierefrei und attraktiv für Schulschwimmen, Vereine und Freizeit. Ein echtes Plus für Lebensqualität und Zusammenhalt in unserer Stadt.
+    <p><strong>Ein Bad für alle – modern, inklusiv, ganzjährig nutzbar</strong><br />
+    Wir schaffen ein neues Hallenbad und ein saniertes Freibad – generationengerecht, barrierefrei und attraktiv für Schulschwimmen, Vereine und Freizeit. Ein echtes Plus für Lebensqualität und Zusammenhalt in unserer Stadt.</p>
 
-    **Startschuss erfolgt – Umsetzung läuft**
-    Der symbolische Spatenstich fiel im November 2024. Der Abriss des alten Freibads beginnt Ende 2024, danach starten die Hochbauarbeiten. Die Eröffnung ist für 2027 geplant.
+    <p><strong>Startschuss erfolgt – Umsetzung läuft</strong><br />
+    Der symbolische Spatenstich fiel im November 2024. Der Abriss des alten Freibads beginnt Ende 2024, danach starten die Hochbauarbeiten. Die Eröffnung ist für 2027 geplant.</p>
 
-    Ich bin stolz, dieses Leuchtturmprojekt für Warburg angestoßen und gesichert zu haben – ein sichtbarer Beweis dafür, was wir gemeinsam bewegen können.`,
+    <p>Ich bin stolz, dieses Leuchtturmprojekt für Warburg angestoßen und gesichert zu haben – ein sichtbarer Beweis dafür, was wir gemeinsam bewegen können.</p>`,
   },
   {
     id: 2,
     title: 'Dorfentwicklung ist Chefsache',
     description: 'Projekte aus der Mitte unserer Dörfer',
-    image: '/images_milestones/Restaurant.JPG', 
+    image: '/images_milestones/Restaurant.JPG',
     content: `Für mich als Bürgermeister ist klar: Die Entwicklung unserer Dörfer gehört in die erste Reihe politischer Verantwortung. Deshalb habe ich zahlreiche Projekte gemeinsam mit engagierten Dorfgemeinschaften unterstützt und begleitet.
 
     **Dorftreff Dössel**
@@ -158,7 +158,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, die Mobilit�
     id: 8,
     title: 'Tourismus stärken. Natur erleben.',
     description: 'Mein Einsatz für Warburg als Reiseziel',
-    image: '/images_milestones/Natur_baum.jpg', 
+    image: '/images_milestones/Natur_baum.jpg',
     content: `**Übernachtungszahlen deutlich gesteigert**
 Trotz der Herausforderungen durch die Corona-Pandemie konnten wir die Übernachtungszahlen in Warburg erheblich steigern. Im Jahr 2022 erreichten wir erstmals über 100.000 Gästeübernachtungen, was einer Steigerung von 25,5 % im Vergleich zum Vorkrisenjahr 2019 entspricht. Diese positive Entwicklung liegt deutlich über dem Durchschnitt in Nordrhein-Westfalen und zeigt, dass unsere Investitionen in touristische Infrastruktur und Angebote Früchte tragen.
 
@@ -185,7 +185,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, Warburg als 
     id: 9,
     title: 'Klimaschutz stärken. Zukunft sichern.',
     description: 'Mein Einsatz für ein nachhaltiges Warburg',
-    image: '/images_milestones/World.jpg', 
+    image: '/images_milestones/World.jpg',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich seit 2020 den Klimaschutz zu einem zentralen Anliegen meiner Amtszeit gemacht. Durch gezielte Maßnahmen und Förderprogramme konnten wir bedeutende Fortschritte in den Bereichen erneuerbare Energien, nachhaltige Mobilität und Naturschutz erzielen.
 
 **Integriertes Klimaschutzkonzept als strategische Grundlage**
@@ -211,7 +211,7 @@ Mit diesen Initiativen und Projekten haben wir in Warburg konkrete Schritte unte
     id: 10,
     title: 'Jugend einbinden, fördern und Gehör verschaffen',
     description: 'Mein Einsatz für die junge Generation in Warburg',
-    image: '/images_milestones/Skateboard.jpg', 
+    image: '/images_milestones/Skateboard.jpg',
     content: `**„Jugend entscheidet“ – Skatepark als sichtbares Ergebnis gelebter Beteiligung**
 Im Dezember 2020 wurde Warburg als eine von zehn Kommunen für das Programm „Jugend entscheidet“ der Hertie-Stiftung ausgewählt. Auf meine Initiative hin bewarb sich die Stadt für dieses Programm, um Jugendlichen zwischen 12 und 15 Jahren die Möglichkeit zu geben, ein kommunalpolitisches Thema auszuwählen, zu bearbeiten und zur Entscheidung zu bringen.
 
@@ -230,7 +230,7 @@ Diese Projekte und Maßnahmen zeigen, wie wichtig es ist, jungen Menschen Räume
     id: 11,
     title: 'Stadtentwicklung & Wohnen', // Abgeleiteter Titel
     description: 'Zukunftsorientierte Stadtentwicklung', // Abgeleitete Beschreibung
-    image: '/images_milestones/LaurentiusHöhe.jpg', 
+    image: '/images_milestones/LaurentiusHöhe.jpg',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich mich für eine zukunftsorientierte Stadtentwicklung eingesetzt, die sowohl soziale Inklusion als auch nachhaltige Flächennutzung fördert. Zwei herausragende Projekte in diesem Kontext sind die Entwicklung des inklusiven Quartiers Laurentiushöhe und die Revitalisierung des ehemaligen Zuckerfabrikgeländes.
 
 **Laurentiushöhe – Ein Quartier mit Seele**

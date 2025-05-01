@@ -1,4 +1,5 @@
 import React from 'react';
+import parse from 'html-react-parser';
 
 interface NewsContentProps {
   description: string;
@@ -11,8 +12,8 @@ export default function NewsContent({
 }: NewsContentProps) {
   return (
     <div className="prose text-primary max-w-none">
-      <p className="text-gray-600 mb-4">{description}</p>
-      <p className="text-gray-600 whitespace-pre-line">{content}</p>
+      <p className="mb-4 font-semibold">{description}</p>
+      <div>{parse(content)}</div>
     </div>
   );
 }

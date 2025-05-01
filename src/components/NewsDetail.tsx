@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft } from 'lucide-react';
+import NewsContent from './news/NewsContent';
 
 interface NewsDetailProps {
   news: {
@@ -30,10 +31,10 @@ export default function NewsDetail({ news, onBack }: NewsDetailProps) {
         <h2 className="text-2xl font-semibold text-primary mt-2 mb-4">
           {news.title}
         </h2>
-        <div className="prose text-primary max-w-none">
-          <p className="mb-4 font-semibold">{news.description}</p>
-          <div dangerouslySetInnerHTML={{ __html: news.content }} />
-        </div>
+        <NewsContent
+          description={news.description}
+          content={news.content}
+        />
       </div>
     </div>
   );
