@@ -86,7 +86,7 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span>unserbuergermeister@email.de</span>
+                  <span>kontakt@tobias-scherf.de</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
