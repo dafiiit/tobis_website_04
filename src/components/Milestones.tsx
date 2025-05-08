@@ -68,18 +68,18 @@ function MilestoneDetail({
 export default function Milestones() {
     const [selectedMilestone, setSelectedMilestone] =
         useState<MilestoneItem | null>(null);
-    const [visibleItems, setVisibleItems] = useState(2); // Show 4 items initially (2 rows on md)
+    const [visibleItems, setVisibleItems] = useState(6); // Show 4 items initially (2 rows on md)
     const itemsPerRow = 2; // Corresponds to md:grid-cols-2
 
     const visibleMilestones = newsData.slice(0, visibleItems);
     const hasMoreItems = visibleItems < newsData.length;
 
     const handleShowMore = () => {
-        setVisibleItems(prev => Math.min(prev + itemsPerRow, newsData.length));
+        setVisibleItems(prev => Math.min(prev + 3*itemsPerRow, newsData.length));
     };
 
     const handleShowLess = () => {
-        setVisibleItems(itemsPerRow); // Reset to initial number of items
+        setVisibleItems(6); // Reset to initial number of items
     };
 
     return (
