@@ -21,35 +21,39 @@ function MilestoneDetail({
     // WARNING: Ensure the HTML content in newsData is safe and trusted.
     return (
         <div
-            className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 overflow-y-auto"
+            className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4" // Main overlay, ensures padding around the modal
             style={{ zIndex: 1000 }}
         >
-            <div className="bg-white rounded-xl overflow-hidden max-w-screen-md w-full my-8">
-                <div className="p-6">
-                    <div className="mb-4">
-                        {/* Use a placeholder or generic icon, or decide if icons are needed */}
-                        {/* <div className="p-2 btn-primary rounded-lg text-white inline-block mr-3">
-               <Info className="w-6 h-6" /> // Example using a generic icon
-             </div> */}
-                        <h3 className="text-2xl font-semibold text-primary inline-block align-middle">
-                            {milestone.title}
-                        </h3>
-                    </div>
-                    <div>
-                        <h4 className="text-xl font-semibold mb-2">Details zum Meilenstein</h4>
-                        <div
-                            className="text-gray-600 prose max-w-none" // Using prose for basic styling
-                            dangerouslySetInnerHTML={{ __html: milestone.content }}
-                        />
-                    </div>
-                    <button onClick={onBack} className="mt-6 btn-primary">
+            <div className="bg-white rounded-xl shadow-xl overflow-hidden max-w-screen-md w-full flex flex-col" style={{ maxHeight: 'calc(100vh - 4rem)' }}> {/* Modal box: flex column, max height allows for some margin */}
+                {/* Modal Header */}
+                <div className="p-4 sm:p-6 border-b border-gray-200">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-primary">
+                        {milestone.title}
+                    </h3>
+                </div>
+
+                {/* Modal Body (Scrollable) */}
+                <div className="p-4 sm:p-6 overflow-y-auto flex-grow">
+                    <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4 text-gray-800">Details zum Meilenstein</h4>
+                    <div
+                        className="text-gray-700 prose prose-sm sm:prose-base max-w-none" // Responsive prose styling
+                        dangerouslySetInnerHTML={{ __html: milestone.content }}
+                    />
+                </div>
+
+                {/* Modal Footer */}
+                <div className="p-4 sm:p-6 border-t border-gray-200 bg-gray-50">
+                    <button
+                        onClick={onBack}
+                        className="w-full sm:w-auto flex items-center justify-center px-4 py-2 btn-primary rounded-md text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500" // Enhanced button styling
+                    >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
                             viewBox="0 0 24 24"
                             strokeWidth={1.5}
                             stroke="currentColor"
-                            className="w-6 h-6 inline-block mr-2"
+                            className="w-5 h-5 sm:w-6 sm:h-6 mr-2"
                         >
                             <path
                                 strokeLinecap="round"
@@ -75,7 +79,7 @@ export default function Milestones() {
     const hasMoreItems = visibleItems < newsData.length;
 
     const handleShowMore = () => {
-        setVisibleItems(prev => Math.min(prev + 3*itemsPerRow, newsData.length));
+        setVisibleItems(prev => Math.min(prev + 3 * itemsPerRow, newsData.length));
     };
 
     const handleShowLess = () => {

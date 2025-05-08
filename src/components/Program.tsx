@@ -196,12 +196,13 @@ function ProgramDetail({
 
   return (
     <div
-      className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 overflow-y-auto" // Added overflow-y-auto
+      className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4" // Removed overflow-y-auto
       style={{ zIndex: 1000 }}
     >
-      <div className="bg-white rounded-xl overflow-hidden max-w-screen-md w-full my-8"> {/* Added margin-y */}
-        <div className="p-6">
-          <div className="flex items-center space-x-3 mb-4">
+      <div className="bg-white rounded-xl shadow-xl max-w-screen-md w-full flex flex-col" style={{ maxHeight: 'calc(100vh - 4rem)' }}> {/* Adjusted classes and added style */}
+        {/* Modal Header */}
+        <div className="p-6 border-b border-gray-200">
+          <div className="flex items-center space-x-3">
             <div className="p-2 btn-primary rounded-lg text-white">
               {program.icon}
             </div>
@@ -209,23 +210,33 @@ function ProgramDetail({
               {program.title}
             </h3>
           </div>
-          {/* Removed grid layout, now displaying details directly */}
+        </div>
+
+        {/* Modal Body (Scrollable) */}
+        <div className="p-6 overflow-y-auto flex-grow">
           <div>
             <h4 className="text-xl font-semibold mb-2">Details zum Programmpunkt</h4>
-            {/* Render the formatted HTML */}
             <div
-              className="text-gray-600 prose max-w-none" // Using prose for basic styling
+              className="text-gray-600 prose max-w-none"
               dangerouslySetInnerHTML={{ __html: formattedDetails }}
             />
           </div>
-          <button onClick={onBack} className="mt-6 btn-primary">
+        </div>
+
+        {/* Modal Footer */}
+        <div className="p-6 border-t border-gray-200 rounded-b-xl">
+          {/* MODIFIED BUTTON AND SVG BELOW */}
+          <button
+            onClick={onBack}
+            className="w-full sm:w-auto flex items-center justify-center px-4 py-2 btn-primary rounded-md text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="w-6 h-6 inline-block mr-2" // Added styling for button icon
+              className="w-5 h-5 sm:w-6 sm:h-6 mr-2" // Matched MilestoneDetail's SVG classes
             >
               <path
                 strokeLinecap="round"
