@@ -24,7 +24,7 @@ export const newsData = [
     id: 2,
     title: 'Dorfentwicklung ist Chefsache',
     description: 'Projekte aus der Mitte unserer Dörfer',
-    image: '/images_milestones/Restaurant.JPG',
+    image: '/images_milestones/Dorfentwicklung.JPEG',
     content: `Für mich als Bürgermeister ist klar: Die Entwicklung unserer Dörfer gehört in die erste Reihe politischer Verantwortung. Deshalb habe ich zahlreiche Projekte gemeinsam mit engagierten Dorfgemeinschaften unterstützt und begleitet.
 
     <strong>Dorftreff Dössel</strong>
@@ -71,7 +71,7 @@ export const newsData = [
     id: 4,
     title: 'Innenstadt stärken. Altstadt bewahren.',
     description: 'Mein Einsatz für ein lebendiges Warburg',
-    image: '/images_milestones/Demokratie.jpg', // Fallback image
+    image: '/images_milestones/Kaffee.JPEG', // Fallback image
     content: `Als Bürgermeister habe ich mich intensiv dafür eingesetzt, unsere Innenstadt zu beleben, Leerstände zu verringern und die historische Altstadt zu erhalten. Mein Ziel: eine Innenstadt, die lebendig, attraktiv und identitätsstiftend ist – für alle Generationen.
 
 <strong>Einzelhandel gefördert – Leerstand bekämpft</strong>
@@ -116,7 +116,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, den Brandsch
     id: 6,
     title: 'Demokratie leben. Vielfalt fördern.',
     description: 'Mein Einsatz für Zusammenhalt in Warburg',
-    image: '/images_milestones/Demokratie.jpg',
+    image: '/images_milestones/Restaurant.JPG',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich es mir zur Aufgabe gemacht, Demokratie, Vielfalt und Toleranz in unserer Stadt nicht nur zu schützen, sondern aktiv zu stärken. Seit 2023 ist Warburg Teil des Bundesprogramms „Demokratie leben!“, das ich gemeinsam mit engagierten Partnern in unserer Stadt erfolgreich auf den Weg gebracht habe.
 
 <strong>Demokratie fördern – von jung bis alt</strong>
@@ -158,7 +158,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, die Mobilit�
     id: 8,
     title: 'Tourismus stärken. Natur erleben.',
     description: 'Mein Einsatz für Warburg als Reiseziel',
-    image: '/images_milestones/Natur_baum.jpg',
+    image: '/images_milestones/Fahrrad_karte.jpg',
     content: `<strong>Übernachtungszahlen deutlich gesteigert</strong>
 Trotz der Herausforderungen durch die Corona-Pandemie konnten wir die Übernachtungszahlen in Warburg erheblich steigern. Im Jahr 2022 erreichten wir erstmals über 100.000 Gästeübernachtungen, was einer Steigerung von 25,5 % im Vergleich zum Vorkrisenjahr 2019 entspricht. Diese positive Entwicklung liegt deutlich über dem Durchschnitt in Nordrhein-Westfalen und zeigt, dass unsere Investitionen in touristische Infrastruktur und Angebote Früchte tragen.
 
@@ -185,7 +185,7 @@ Mit diesen Maßnahmen habe ich als Bürgermeister dazu beigetragen, Warburg als 
     id: 9,
     title: 'Klimaschutz stärken. Zukunft sichern.',
     description: 'Mein Einsatz für ein nachhaltiges Warburg',
-    image: '/images_milestones/World.jpg',
+    image: '/images_milestones/Unterzeichnen.JPEG',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich seit 2020 den Klimaschutz zu einem zentralen Anliegen meiner Amtszeit gemacht. Durch gezielte Maßnahmen und Förderprogramme konnten wir bedeutende Fortschritte in den Bereichen erneuerbare Energien, nachhaltige Mobilität und Naturschutz erzielen.
 
 <strong>Integriertes Klimaschutzkonzept als strategische Grundlage</strong>
@@ -230,7 +230,7 @@ Diese Projekte und Maßnahmen zeigen, wie wichtig es ist, jungen Menschen Räume
     id: 11,
     title: 'Stadtentwicklung & Wohnen', // Abgeleiteter Titel
     description: 'Zukunftsorientierte Stadtentwicklung', // Abgeleitete Beschreibung
-    image: '/images_milestones/LaurentiusHöhe.jpg',
+    image: '/images_milestones/Laurentius Hoe.jpg',
     content: `Als Bürgermeister der Hansestadt Warburg habe ich mich für eine zukunftsorientierte Stadtentwicklung eingesetzt, die sowohl soziale Inklusion als auch nachhaltige Flächennutzung fördert. Zwei herausragende Projekte in diesem Kontext sind die Entwicklung des inklusiven Quartiers Laurentiushöhe und die Revitalisierung des ehemaligen Zuckerfabrikgeländes.
 
 <strong>Laurentiushöhe – Ein Quartier mit Seele</strong>
