@@ -47,7 +47,7 @@ const programs = [
     description:
       'Klarer Kurs für eine starke Wirtschaft und sichere Arbeitsplätze in Warburg',
     image:
-      '/images_program/Haushalt.jpg',
+      '/images_program/Wirtschaft Arbeit.PNG',
     details: `
       ### „Infrastruktur stärken und Wirtschaft voranbringen.“
       Unsere Stadt lebt von den Menschen, die hier arbeiten, Unternehmen führen oder Ausbildungsplätze schaffen. Ich als Bürgermeister setze mich dafür ein, dass Warburg ein starker Wirtschaftsstandort bleibt – mit guten Rahmenbedingungen für Unternehmen, Handwerk, Einzelhandel und Landwirtschaft. Über unseren Wirtschaftsförderer stehen wir als verlässliche Ansprechpartner zur Seite, auch bei individuellen Weiterentwicklungswünschen.
@@ -155,7 +155,7 @@ const programs = [
     description:
       'Klarer Kurs für zukunftssichere Warburger Finanzen',
     image:
-      '/images_program/Wirtschaft Arbeit.PNG',
+      '/images_program/Haushalt.jpg',
     details: `
       ### „Fördergelder einwerben – sinnvoll investieren.“
       Gesunde Finanzen sind die Grundlage für eine starke und lebenswerte Stadt. Auch wenn Kommunen unter steigenden Belastungen leiden, richte ich als Bürgermeister den Blick gezielt auf Förderprogramme, um finanzielle Spielräume zu schaffen.
