@@ -13,19 +13,34 @@ export default function Navbar() {
             <Logo />
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#vision" className="text-gray-700 hover:text-primary">
+            <a href="#vision" className="text-gray-700 hover:text-primary" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('vision')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               Vision
             </a>
-            <a href="#news" className="text-gray-700 hover:text-primary">
-              Viel getan
+            <a href="#milestones" className="text-gray-700 hover:text-primary" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('milestones')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Meilensteine
             </a>
-            <a href="#program" className="text-gray-700 hover:text-primary">
-              Viel zu tun
+            <a href="#program" className="text-gray-700 hover:text-primary" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
+              Wahlprogramm
             </a>
-            <a href="#about" className="text-gray-700 hover:text-primary">
+            <a href="#about" className="text-gray-700 hover:text-primary" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               Über mich
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-primary">
+            <a href="#contact" className="text-gray-700 hover:text-primary" onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}>
               Kontakt
             </a>
 
@@ -74,30 +89,50 @@ export default function Navbar() {
             <a
               href="#vision"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('vision')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Vision
             </a>
             <a
-              href="#news"
+              href="#milestones"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('milestones')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
-              Viel getan
+              Meilensteine
             </a>
             <a
               href="#program"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('program')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
-              Viel zu tun
+              Wahlprogramm
             </a>
             <a
               href="#about"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Über mich
             </a>
             <a
               href="#contact"
               className="block px-3 py-2 text-gray-700 hover:text-primary"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Kontakt
             </a>
