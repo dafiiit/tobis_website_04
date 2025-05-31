@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import {
   Mail,
   Phone,
@@ -9,6 +10,61 @@ import {
 } from 'lucide-react';
 
 export default function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      await emailjs.send(
+        'service_1719vu6',
+        'template_jcpuvr9',
+        {
+          name: formData.name,
+          message: formData.message,
+          sender_mail: formData.email,
+          time: new Date().toLocaleString('de-DE'),
+        },
+        'qS1um0HqAtIReL-MS'
+      );
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.',
+      });
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-24">
       <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,7 +85,18 @@ export default function Contact() {
             <h3 className="text-2xl font-semibold text-primary mb-6">
               Schreiben Sie mir
             </h3>
-            <form className="space-y-4">
+            {submitStatus.type && (
+              <div
+                className={`mb-4 p-4 rounded-lg ${
+                  submitStatus.type === 'success'
+                    ? 'bg-green-100 text-green-700'
+                    : 'bg-red-100 text-red-700'
+                }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label
                   htmlFor="name"
@@ -40,6 +107,10 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent"
                 />
               </div>
@@ -53,6 +124,10 @@ export default function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent"
                 />
               </div>
@@ -65,15 +140,20 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                   rows={4}
                   className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-900 focus:border-transparent"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full px-6 py-3 btn-primary text-white rounded-lg hover:bg-blue-800 transition-colors"
+                disabled={isSubmitting}
+                className="w-full px-6 py-3 btn-primary text-white rounded-lg hover:bg-blue-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Nachricht senden
+                {isSubmitting ? 'Wird gesendet...' : 'Nachricht senden'}
               </button>
             </form>
           </div>
