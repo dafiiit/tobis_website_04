@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +15,13 @@ export default function Hero() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    navigate('/');
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  };
 
   // Parallax-Effekt für die Lilie, sanft und subtil
   const parallaxOffset = Math.min(scrollPosition * 0.15, 60);
@@ -67,18 +76,18 @@ export default function Hero() {
             Unser Bürgermeister für Warburg.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#vision"
+            <button
+              onClick={() => scrollToSection('vision')}
               className="inline-block px-8 py-3 bg-blue-700 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition-colors text-center"
             >
               Meine Vision
-            </a>
-            <a
-              href="#contact"
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
               className="inline-block px-8 py-3 bg-white text-blue-900 rounded-full font-semibold shadow hover:bg-gray-100 transition-colors border border-blue-700 text-center"
             >
               Kontakt
-            </a>
+            </button>
           </div>
         </div>
       </div>
