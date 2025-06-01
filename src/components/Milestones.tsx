@@ -72,14 +72,14 @@ function MilestoneDetail({
 export default function Milestones() {
     const [selectedMilestone, setSelectedMilestone] =
         useState<MilestoneItem | null>(null);
-    const [visibleItems, setVisibleItems] = useState(6); // Show 4 items initially (2 rows on md)
-    const itemsPerRow = 2; // Corresponds to md:grid-cols-2
+    const [visibleItems, setVisibleItems] = useState(6); // Show 6 items initially (3x2)
+    const itemsPerRow = 3; // Corresponds to lg:grid-cols-3
 
     const visibleMilestones = newsData.slice(0, visibleItems);
     const hasMoreItems = visibleItems < newsData.length;
 
     const handleShowMore = () => {
-        setVisibleItems(prev => Math.min(prev + 3 * itemsPerRow, newsData.length));
+        setVisibleItems(prev => Math.min(prev + 6, newsData.length)); // Show 6 more items
     };
 
     const handleShowLess = () => {
@@ -87,12 +87,12 @@ export default function Milestones() {
     };
 
     return (
-        <section id="milestones" className="py-24 bg-gray-50"> {/* Added background color */}
-            <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8"> {/* Changed to max-w-screen-md */}
+        <section id="milestones" className="py-24 bg-gray-50">
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8"> {/* Changed to max-w-screen-xl */}
                 <h2 className="text-3xl font-bold text-center text-primary mb-8">
                     Meilensteine meiner Amtszeit
                 </h2>
-                <h1 className="text-lg font-semibold text-center text-gray-700 mb-12"> {/* Increased bottom margin */}
+                <h1 className="text-lg font-semibold text-center text-gray-700 mb-12">
                     Wichtige Erfolge und Projekte seit 2020:
                 </h1>
                 {selectedMilestone ? (
@@ -101,12 +101,12 @@ export default function Milestones() {
                         onBack={() => setSelectedMilestone(null)}
                     />
                 ) : (
-                    <> {/* Added Fragment */}
-                        <div className="grid md:grid-cols-2 gap-8"> {/* Changed to 2 columns on medium screens */}
+                    <>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Added lg:grid-cols-3 */}
                             {visibleMilestones.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="glass rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" // Removed flex flex-col
+                                    className="glass rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
                                     onClick={(event) => {
                                         event.preventDefault();
                                         setSelectedMilestone(item);
@@ -117,18 +117,17 @@ export default function Milestones() {
                                         alt={item.title}
                                         className="w-full h-48 object-cover"
                                     />
-                                    <div className="p-6"> {/* Removed flex flex-col flex-grow */}
-                                        {/* Removed Icon display as newsData doesn't have icons */}
-                                        <h3 className="text-xl font-semibold text-primary mb-4"> {/* Added mb-4 */}
+                                    <div className="p-6">
+                                        <h3 className="text-xl font-semibold text-primary mb-4">
                                             {item.title}
                                         </h3>
-                                        <p className="text-gray-600">{item.description}</p> {/* Removed flex-grow */}
+                                        <p className="text-gray-600">{item.description}</p>
                                     </div>
                                 </div>
                             ))}
                         </div>
                         {/* Show More / Show Less Buttons */}
-                        <div className="text-center mt-12"> {/* Increased top margin */}
+                        <div className="text-center mt-12">
                             {hasMoreItems ? (
                                 <button
                                     onClick={handleShowMore}
@@ -136,7 +135,7 @@ export default function Milestones() {
                                 >
                                     Mehr anzeigen
                                 </button>
-                            ) : visibleItems > itemsPerRow && ( // Show "Weniger anzeigen" only if more than initial items are shown
+                            ) : visibleItems > itemsPerRow && (
                                 <button
                                     onClick={handleShowLess}
                                     className="inline-block px-8 py-3 btn-secondary text-white rounded-full hover:btn-secondary:hover transition-colors"
@@ -145,7 +144,7 @@ export default function Milestones() {
                                 </button>
                             )}
                         </div>
-                    </> /* End Fragment */
+                    </>
                 )}
             </div>
         </section>

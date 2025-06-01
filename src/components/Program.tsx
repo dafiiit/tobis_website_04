@@ -290,17 +290,24 @@ export default function Program({
   onNewsSelect: (newsId: number) => void;
 }) {
   const [selectedProgram, setSelectedProgram] =
-    useState<ProgramItem | null>(null); // Use the defined type
+    useState<ProgramItem | null>(null);
+  const [visibleItems, setVisibleItems] = useState(6); // Show 6 items initially (3x2)
+  const itemsPerRow = 3; // Corresponds to lg:grid-cols-3
 
-  // Removed handleNewsSelect as onNewsSelect is not used in ProgramDetail anymore
-  // const handleNewsSelect = (newsId: number) => {
-  //   onNewsSelect(newsId);
-  //   setSelectedProgram(null);
-  // };
+  const visiblePrograms = programs.slice(0, visibleItems);
+  const hasMoreItems = visibleItems < programs.length;
+
+  const handleShowMore = () => {
+    setVisibleItems(prev => Math.min(prev + 6, programs.length)); // Show 6 more items
+  };
+
+  const handleShowLess = () => {
+    setVisibleItems(6); // Reset to initial number of items
+  };
 
   return (
     <section id="program" className="py-24">
-      <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8"> {/* Changed to max-w-screen-xl */}
         <h2 className="text-3xl font-bold text-center text-primary mb-8">
           Wahlprogramm
         </h2>
@@ -311,38 +318,58 @@ export default function Program({
           <ProgramDetail
             program={selectedProgram}
             onBack={() => setSelectedProgram(null)}
-            onNewsSelect={onNewsSelect} // Pass down onNewsSelect even if unused in ProgramDetail for now
+            onNewsSelect={onNewsSelect}
           />
         ) : (
-          <div className="grid md:grid-cols-2 gap-8">
-            {programs.map((item, index) => (
-              <div
-                key={index}
-                className="glass rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" // Added hover effect
-                onClick={(event) => {
-                  event.preventDefault();
-                  setSelectedProgram(item);
-                }}
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="p-2 btn-primary rounded-lg text-white">
-                      {item.icon}
+          <>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Added lg:grid-cols-3 */}
+              {visiblePrograms.map((item, index) => (
+                <div
+                  key={index}
+                  className="glass rounded-xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    setSelectedProgram(item);
+                  }}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="p-2 btn-primary rounded-lg text-white">
+                        {item.icon}
+                      </div>
+                      <h3 className="text-xl font-semibold text-primary">
+                        {item.title}
+                      </h3>
                     </div>
-                    <h3 className="text-xl font-semibold text-primary">
-                      {item.title}
-                    </h3>
+                    <p className="text-gray-600">{item.description}</p>
                   </div>
-                  <p className="text-gray-600">{item.description}</p>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+            {/* Show More / Show Less Buttons */}
+            <div className="text-center mt-12">
+              {hasMoreItems ? (
+                <button
+                  onClick={handleShowMore}
+                  className="inline-block px-8 py-3 btn-secondary text-white rounded-full hover:btn-secondary:hover transition-colors"
+                >
+                  Mehr anzeigen
+                </button>
+              ) : visibleItems > itemsPerRow && (
+                <button
+                  onClick={handleShowLess}
+                  className="inline-block px-8 py-3 btn-secondary text-white rounded-full hover:btn-secondary:hover transition-colors"
+                >
+                  Weniger anzeigen
+                </button>
+              )}
+            </div>
+          </>
         )}
       </div>
     </section>
