@@ -16,7 +16,7 @@ export default function Vision() {
       <div
         className="hidden md:block absolute inset-0 w-full h-full"
         style={{
-          backgroundImage: 'url("/Vision.jpeg")',
+          backgroundImage: 'url("/Vision cut.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',

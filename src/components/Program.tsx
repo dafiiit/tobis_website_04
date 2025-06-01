@@ -35,7 +35,7 @@ const programs = [
     description:
       'Viel getan. Viel zu tun.',
     image:
-      '/images_program/warburg.jpg',
+      '/images_program/Schlussbild.jpeg',
     details: `
       ### Gemeinsam bis 2036 – zum 1000-jährigen Stadtjubiläum.
       Warburg ist unsere Heimat – eine Stadt mit starker Mitte und 15 engagierten Dörfern, in denen Zusammenhalt und Miteinander gelebt werden. Als Bürgermeister ist es mein Anspruch, Ideen aus Politik, Bürgerschaft und Vereinen aufzunehmen und mutig weiterzuentwickeln – ganz gleich, woher sie kommen. 
@@ -191,6 +191,7 @@ const programs = [
       Mein Ziel ist es, Warburg und seine Dörfer als lebendige, starke und zukunftsfähige Gemeinschaft weiterzuentwickeln – mit einer modernen Verwaltung, starker Infrastruktur, guter Bildung, verlässlicher medizinischer Versorgung, nachhaltigem Wirtschaften, sozialem Miteinander und einem echten Wir-Gefühl.
       Ich möchte gemeinsam mit Jugendlichen, Bürgerinnen und Bürgern, Ratsmitgliedern, Vereinen und Unternehmen den erfolgreichen Weg unserer Stadt fortsetzen – mit Mut, Herz und Verstand.
       Viel getan. Viel zu tun. 
+      Gerne schicke ich Ihnen das gesamte ausformulierte Wahlprogramm. Bitte kurze E-Mail an <a href="mailto:wahlprogramm@tobias-scherf.de" className="text-primary hover:underline">wahlprogramm@tobias-scherf.de</a>
       ### Packen wir es an – gemeinsam. Für unsere Heimat Warburg.
       `,
   },
