@@ -51,16 +51,6 @@ export default function Impressum() {
           Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung mit anderen Datenquellen wird nicht vorgenommen.
         </p>
 
-        <h3 className="text-2xl font-semibold mb-4">6. Instagram Plugin</h3>
-        <p className="mb-4">
-          Auf unseren Seiten sind Funktionen des Dienstes Instagram eingebunden. Anbieter ist Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.<br />
-          Wenn Sie eine Seite mit integriertem Instagram-Plugin aufrufen, wird eine Verbindung zu den Servern von Instagram hergestellt. Dabei wird Instagram mitgeteilt, welche Seiten Sie besucht haben.<br />
-          Wenn Sie in Ihrem Instagram-Account eingeloggt sind, kann Instagram den Besuch unserer Seiten Ihrem Benutzerkonto zuordnen. Weitere Informationen finden Sie in der Datenschutzerklärung von Instagram:<br />
-          <a href="https://privacycenter.instagram.com/policy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-            https://privacycenter.instagram.com/policy
-          </a>
-        </p>
-
         <h3 className="text-2xl font-semibold mb-4">7. Ihre Rechte</h3>
         <p className="mb-2">Sie haben das Recht auf:</p>
         <ul className="list-disc pl-6 mb-4">
