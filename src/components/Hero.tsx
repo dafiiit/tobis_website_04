@@ -38,7 +38,7 @@ export default function Hero() {
 
       {/* Lilie mit Parallax-Scroll, kein Springen */}
       <div
-        className="absolute"
+        className="absolute hidden md:block"
         style={{
           width: '200px',
           height: '200px',
