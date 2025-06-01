@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import {
   Mail,
@@ -218,9 +219,9 @@ export default function Contact() {
         <div className="text-center text-gray-600 mt-12">
           <p>&copy; 2025 Tobias Scherf. Alle Rechte vorbehalten.</p>
           <p>
-            <a href="/impressum.html" className="hover:text-primary underline">
+            <Link to="/impressum" className="hover:text-primary underline">
               Impressum
-            </a>
+            </Link>
           </p>
         </div>
       </div>
