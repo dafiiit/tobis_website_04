@@ -5,22 +5,27 @@ export default function Vision() {
   return (
     <section
       id="vision"
-      className="relative min-h-screen flex items-center justify-center md:justify-end overflow-hidden px-4 md:px-0"
-      style={{
-        backgroundImage: 'url("/Vision.jpeg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      className="relative min-h-screen flex items-center justify-center md:justify-end overflow-hidden px-4 md:px-0 bg-gray-50 md:bg-transparent"
     >
-      {/* Darker Gradient Overlay */}
+      {/* Darker Gradient Overlay (only on md+) */}
       <div
-        className="absolute inset-0 bg-gradient-to-l from-gray-50/80 via-gray-900/20 to-transparent"
+        className="hidden md:block absolute inset-0 bg-gradient-to-l from-gray-50/80 via-gray-900/20 to-transparent"
         style={{ zIndex: 1 }}
+      />
+      {/* Background image only on md+ */}
+      <div
+        className="hidden md:block absolute inset-0 w-full h-full"
+        style={{
+          backgroundImage: 'url("/Vision.jpeg")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          zIndex: 0,
+        }}
       />
       {/* Content Card */}
       <div className="relative z-10 w-full max-w-2xl md:mr-16">
-        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-6 md:p-10 animate-fade-in-up">
+        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-6 md:p-10 animate-fade-in-up border md:border-gray-200 border-transparent">
           <h2 className="text-3xl md:text-4xl font-extrabold text-primary mb-4 md:mb-5">
             Meine Vision für unsere Stadt
           </h2>
