@@ -68,7 +68,7 @@ export default function Hero() {
 
       {/* Card mit Text und Buttons */}
       <div className="relative z-10 w-full max-w-2xl flex justify-center">
-        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-10 animate-fade-in-up mt-64">
+        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-10 animate-fade-in-up mt-72">
           <h1 className="text-4xl md:text-6xl font-extrabold text-primary mb-5 text-center">
             Tobias Scherf
           </h1>
