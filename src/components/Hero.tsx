@@ -14,27 +14,40 @@ export default function Hero() {
     };
   }, []);
 
-  const parallaxOffset = Math.min(scrollPosition * 0.2, 100); // Begrenzt die Bewegung auf 50px
+  // Parallax-Effekt für die Lilie, sanft und subtil
+  const parallaxOffset = Math.min(scrollPosition * 0.15, 60);
+  const parallaxRight = 120 - Math.min(scrollPosition * 0.1, 40); // Start bei 120px, bewegt sich max. 40px nach links
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center">
-      <div className="absolute inset-0">
+    <section
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      style={{
+        background: 'linear-gradient(to top, #4269FD22 0%, #4269FD11 60%, transparent 100%)',
+      }}
+    >
+      {/* Hintergrundbild */}
+      <div className="absolute inset-0 z-0">
         <img
           src="https://asc-images.forward-publishing.io/2024/05/30/94423ee3-65c3-4629-9f0a-36af8390a805.jpeg?rect=0%2C50%2C3195%2C2130&w=1024&auto=compress%2Cformat"
           alt="Tobias"
           className="w-full h-full object-cover object-top"
+          style={{ filter: 'brightness(0.92)' }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#4269FD]/95 to-[#4269FD]/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#4269FD44] to-transparent" />
       </div>
 
+      {/* Lilie mit Parallax-Scroll, kein Springen */}
       <div
-        className="absolute opacity-50"
+        className="absolute"
         style={{
-          width: '200px', // Ursprüngliche Größe des Wappens
+          width: '200px',
           height: '200px',
           bottom: `${parallaxOffset}px`,
-          right: '10px',
-          transform: 'scale(4)', // Vergrößert das Wappen um das Vierfache
+          right: `${parallaxRight}px`,
+          transform: 'scale(4)',
+          zIndex: 2,
+          opacity: 0.5,
+          transition: 'bottom 0.2s cubic-bezier(0.23, 1, 0.32, 1), right 0.2s cubic-bezier(0.23, 1, 0.32, 1)',
         }}
       >
         <img
@@ -44,30 +57,41 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
-        <div className="backdrop-blur-lg bg-white/30 rounded-3xl p-8 md:p-12 max-w-4xl mt-40">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 text-center">
+      {/* Card mit Text und Buttons */}
+      <div className="relative z-10 w-full max-w-2xl flex justify-center">
+        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl p-10 animate-fade-in-up mt-64">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-primary mb-5 text-center">
             Tobias Scherf
           </h1>
-          <p className="text-xl md:text-2xl text-white font-light mb-8 text-center">
+          <p className="text-gray-700 text-lg md:text-2xl mb-8 text-center">
             Unser Bürgermeister für Warburg.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#vision"
-              className="inline-block px-8 py-3 btn-secondary text-white rounded-full hover:btn-secondary:hover transition-colors"
+              className="inline-block px-8 py-3 bg-blue-700 text-white rounded-full font-semibold shadow hover:bg-blue-800 transition-colors text-center"
             >
               Meine Vision
             </a>
             <a
               href="#contact"
-              className="inline-block px-8 py-3 bg-white text-blue-900 rounded-full hover:bg-gray-100 transition-colors"
+              className="inline-block px-8 py-3 bg-white text-blue-900 rounded-full font-semibold shadow hover:bg-gray-100 transition-colors border border-blue-700 text-center"
             >
               Kontakt
             </a>
           </div>
         </div>
       </div>
-    </div>
+      {/* Animationen */}
+      <style>{`
+        @keyframes fade-in-up {
+          0% { opacity: 0; transform: translateY(40px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fade-in-up 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+      `}</style>
+    </section>
   );
 }
