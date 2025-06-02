@@ -16,14 +16,20 @@ export default function AboutMe() {
         <section className="py-24 bg-gray-50" style={{ position: 'relative' }}>
             <div id="about" className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-3xl font-bold text-center text-primary mb-5">
-                    Über mich
+                    Persönliches
                 </h2>
                 <div className="text-center">
                     <p className="text-gray-600">
-                        Ich freue mich, dass Sie und Ihr mich als Mensch und Bürgermeister kennenlernen wollen.
+                        Schön, dass Sie und Ihr mehr über mich als Mensch und Bürgermeister erfahren möchtet.
                     </p>
                     <p className="text-gray-600 flex-1">
-                        Ich freue mich auf Ihren und Euren persönlichen Kontakt.
+                        Ich bin jemand, der mit beiden Beinen fest im Leben steht – verwurzelt in Familie, Freundschaften und einem klaren Werteverständnis. Früh habe ich gelernt, was Zusammenhalt, Verantwortung und Einsatz bedeuten – und genau das prägt mein Handeln bis heute.
+                    </p>
+                    <p className="text-gray-600 flex-1">
+                        Meine Familie ist mein größter Rückhalt. Sie gibt mir Kraft, Orientierung und Motivation, mich mit Herzblut für die Menschen in Warburg einzusetzen. Ich glaube fest daran, dass wir gemeinsam viel bewegen können – für unsere Stadt, für unsere Dörfer, für ein starkes Miteinander.
+                    </p>
+                    <p className="text-gray-600 flex-1">
+                        Ich freue mich auf den persönlichen Austausch – mit Ihnen und Euch.
                     </p>
                     <p className="text-gray-600 flex-1">
                         Herzlichst
@@ -51,16 +57,25 @@ export default function AboutMe() {
                                     <footer className="text-sm mt-2">- Astrid Lindgren</footer>
                                 </blockquote>
 
-                                <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
-                                    <p className="text-gray-600 flex-1">
-                                        Groß geworden bin ich auf dem Bauernhof meiner Eltern zwischen Welda und Volkmarsen. Harte Arbeit prägte die Familie und den gesamten Alltag. Die Arbeit um das tägliche Brot prägte unseren Alltag und den dieser Generation.  Morgens und abends Kühe melken, Schweine versorgen, Felder bestellen, Haus, Hof, Garten und Kindern betreuen, Runkeln und Zuckerrüben hacken, ernten, verladen, Urlaub war ein Fremdwort.
-                                        Großwerden auf einem Bauernhof heißt einerseits Verzicht üben und mitarbeiten, gleichzeitig waren die Früchte unseres Tuns greifbar und unmittelbar.  Trotz oder gerade deswegen habe ich meine Kindheit genossen.
-                                    </p>
-                                    <br></br>
+                                <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
+                                    <div className="flex flex-col space-y-4 flex-1">
+                                        <p className="text-gray-600">
+                                            Ich bin auf dem Bauernhof meiner Eltern zwischen Welda und Volkmarsen groß geworden. Harte Arbeit war bei uns Teil des Alltags – sie prägte das Familienleben und war selbstverständlich. Die tägliche Arbeit um das tägliche Brot bestimmte unseren Rhythmus – und den der Generation meiner Eltern.
+                                        </p>
+                                        <p className="text-gray-600">
+                                            Morgens und abends Kühe melken, Schweine versorgen, Felder bestellen. Dazu Haus, Hof, Garten – und wir Kinder mittendrin. Wir hackten Runkeln und Zuckerrüben, ernteten, verluden – Urlaub war ein Fremdwort.
+                                        </p>
+                                        <p className="text-gray-600">
+                                            Auf einem Bauernhof aufzuwachsen hieß, früh mit anzupacken und auch mal zu verzichten. Aber gerade das hat mir ein tiefes Gefühl für das Leben und den Wert von Arbeit vermittelt. Die Früchte unseres Tuns waren greifbar und unmittelbar – und genau das hat meine Kindheit so besonders gemacht.
+                                        </p>
+                                        <p className="text-gray-600">
+                                            Trotz – oder vielleicht gerade wegen – all dieser Erfahrungen blicke ich mit großer Dankbarkeit auf diese Zeit zurück.
+                                        </p>
+                                    </div>
                                     <img
                                         src="/gallery_images/Bauernhof.png"
                                         alt="Bauernhof"
-                                        className="w-full md:w-1/4 rounded-xl block mx-auto"
+                                        className="w-full md:w-1/4 rounded-xl mt-4 md:mt-0"
                                     />
                                 </div>
                                 <br></br>
@@ -69,7 +84,7 @@ export default function AboutMe() {
                                         event.preventDefault();
                                         setisChildhoodExperienceOpen(!isChildhoodExperienceOpen);
                                     }}>
-                                        Prägendes Kindheitserlebnis
+                                        Ein prägendes Kindheitserlebnis
                                         <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isChildhoodExperienceOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                             &#9660;
                                         </span>
@@ -83,10 +98,15 @@ export default function AboutMe() {
                                             <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                                 <div className="flex flex-col space-y-4">
                                                     <p className="text-gray-600">
-                                                        E Dank einer guten medizinischen Versorgung in Marburg, liebevoller Eltern und Verwandten und meinem eigenen starken Willen zum Leben, blicke ich heute dankbar auf diese Zeit zurück.
+                                                        Ein einschneidendes Erlebnis meiner Kindheit war ein schwerer Unfall mit zwölf Jahren in Bad Arolsen – ich wurde von einem LKW überrollt. Die Verletzungen waren lebensbedrohlich, ich galt als klinisch tot. Doch ich wurde ins Leben zurückgeholt – und habe mich Stück für Stück selbst zurück ins Leben gekämpft.
                                                     </p>
                                                     <p className="text-gray-600">
-                                                        Wie kostbar und wertvoll das Leben in prägendes Erlebnis meiner Kindheit war mein schwerer Unfall mit zwölf Jahren in Bad Arolsen, bei dem ich von einem LKW überrollt wurde. Ich erlitt schwerste Verletzungen, galt als klinisch tot wurde doch zurück ins Leben geholt und kämpfte mich letztlich selbst ins Leben zurück.ist, weiß ich seit meinem Unfall sehr zu schätzen, weiterhin habe ich gelernt, dass jeder der hinfällt auch wieder aufstehen und sich dem Kampf des Lebens stellen darf. Dabei ist jeder seines Glückes Schmied und ich schmiede gerne an meinem Glück und am Glück anderer. Nie aufgeben und immer optimistisch ins Leben blicken. Diese Eigenschaften habe ich durch meinen Unfall verinnerlicht und sie helfen mir auch heute noch, Rückschläge, meinen Job und mein Leben zu meistern.
+                                                        Dank der hervorragenden medizinischen Versorgung in Marburg, der Fürsorge meiner Eltern und Verwandten – und nicht zuletzt durch meinen eigenen Lebenswillen – blicke ich heute mit großer Dankbarkeit auf diese Zeit zurück.                                                    </p>
+                                                    <p className="text-gray-600">
+                                                        Seit diesem Unfall weiß ich, wie kostbar das Leben wirklich ist. Ich habe gelernt: Wer fällt, darf auch wieder aufstehen – und sich dem Leben mit all seinen Herausforderungen stellen. Jeder ist seines Glückes Schmied – und ich schmiede gerne: an meinem eigenen Glück und am Glück anderer.
+                                                    </p>
+                                                    <p className="text-gray-600">
+                                                        Nie aufgeben, immer mit Zuversicht nach vorn schauen – diese Haltung begleitet mich seitdem. Sie hilft mir, Rückschläge zu überwinden, berufliche wie persönliche Herausforderungen zu meistern und das Leben in all seinen Facetten anzunehmen.
                                                     </p>
                                                 </div>
                                                 <br></br>
@@ -123,14 +143,16 @@ export default function AboutMe() {
                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                     <div className="flex flex-col space-y-4">
                                         <p className="text-gray-600">
-                                            Ich bin ein Familienmensch. Meine vier Kinder wurden im ersten Jahrzehnt dieses Jahrhunderts geboren und sind nun 15, 18, 22 und 25 Jahre alt. Welch ein Glück, Kinder zu haben und diese auf ihrem Lebensweg begleiten zu können. Einfach für sie da zu sein.
-                                            Das war und ist mir auch bei meiner Tätigkeit als Bürgermeister immer wichtig. Kinder – egal welchen Alters – brauchen Begleitung, Unterstützung, Wärme und Nähe – auch wenn die Eltern getrennt sind oder gerade dann. Eine große Unterstützung ist dabei meine Mutter, Oma Renate, die sich liebevoll um ihre Enkelkinder kümmert, mich entlastet und das Herz der Familie ist.
+                                            Ich bin ein Familienmensch durch und durch. Meine vier Kinder wurden im ersten Jahrzehnt dieses Jahrhunderts geboren – heute sind sie 15, 18, 22 und 25 Jahre alt. Es ist ein großes Glück, Kinder zu haben und sie auf ihrem Lebensweg begleiten zu dürfen. Für sie da zu sein – in guten wie in herausfordernden Zeiten – war und ist mir ein Herzensanliegen. Auch in meiner Tätigkeit als Bürgermeister spielt dieser Wert eine zentrale Rolle.
                                         </p>
                                         <p className="text-gray-600">
-                                            Die Rolle als Vater habe ich die Rolle für meine Kids immer gerne wahrgenommen. Nicht selten eile ich zwischen zwei Warburger Terminen, um die Jüngste zum Handball zu bringen oder die Zweitjüngste bei Auftritten der Volkmarser Prinzengarde zu begleiten. Es ist wunderbar, die Kinder wachsen zu sehen, in ihren Höhen und Tiefen für sie dazu sein, sie zu unterstützen, so dass sie ihren eigenen Weg gehen.
+                                            Kinder – ganz gleich welchen Alters – brauchen Nähe, Unterstützung, Wärme und ein offenes Ohr. Das gilt besonders, wenn Eltern getrennt leben. Eine große Hilfe und Stütze ist mir dabei meine Mutter, Oma Renate, die sich liebevoll um ihre Enkelkinder kümmert, mich entlastet und das Herz unserer Familie ist.
                                         </p>
                                         <p className="text-gray-600">
-                                            Ja, Kinder und Bürgermeisteramt sind unter einen Hut zu bekommen, wenn man kraftvoll und willensstark ist und man nicht zögert, sondern sich engagiert. Gerade in Corona-Zeiten war dies eine Herausforderung. Auch meine Kinder waren unterschiedlich stark betroffen und hatten Herausforderungen zu meistern. Dank meiner reichen Erfahrungen als Familienvater ist es eines meiner Herzensanliegen, städtische Aufgaben im Bereich Eltern, Kindern und Familien kraftvoll voranzubringen.
+                                            Die Rolle als Vater habe ich immer mit Freude und voller Überzeugung gelebt. Nicht selten wechsle ich zwischen zwei Terminen in Warburg, um die Jüngste zum Handball zu bringen oder die Zweitjüngste bei Auftritten der Volkmarser Prinzengarde zu begleiten. Es ist ein Geschenk, die eigenen Kinder aufwachsen zu sehen, sie in ihren Höhen und Tiefen zu begleiten und ihnen den Rücken zu stärken, damit sie ihren eigenen Weg gehen können.
+                                        </p>
+                                        <p className="text-gray-600">
+                                            Ja, Familie und Bürgermeisteramt lassen sich miteinander vereinbaren – mit Kraft, Willen und dem festen Entschluss, nicht zu zögern, sondern zu handeln. Besonders in der Corona-Zeit war das eine große Herausforderung. Auch meine Kinder waren in unterschiedlichem Maß betroffen und mussten ihren Weg finden. Diese Erfahrungen als Vater haben mich geprägt – sie fließen direkt in mein Engagement für familienfreundliche Strukturen und Angebote in unserer Stadt ein. Denn Eltern, Kinder und Familien verdienen echte Unterstützung – und dafür setze ich mich mit ganzem Herzen ein.
                                         </p>
                                     </div>
                                     <br></br>
@@ -154,10 +176,22 @@ export default function AboutMe() {
                                         </h4>
                                         {isMyChildrenOpen && (
                                             <div className="overflow-hidden transition-max-height duration-300" style={{ maxHeight: isMyChildrenOpen ? 'none' : '0' }}>
+                                                <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
+                                                    "Kinder zeigen uns, wie wichtig Hoffnung und Veränderung sind. Mit der richtigen Erziehung und Liebe können wir ihnen ein Fundament für die Zukunft geben."
+                                    <               footer className="text-sm mt-2">- Maria Montessori</footer>
+                                                </blockquote>
                                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
-                                                    <p className="text-gray-600">
-                                                        Mein Sohn Kevin studiert Elektrotechnik in Gießen und strahlt Ruhe und Gelassenheit aus. Er genießt das Leben, hat seine Ziele klar im Blick, engagiert sich als Fußballschiedsrichter in der Region und ist  politisch aktiv. Als gelernter Elektroniker für Geräte und Systemtechnik kann er sich heute sein Studium mitfinanzieren. Er unterstützt mich und sagt: „Mein Vater übt das Amt mit Freude und Engagement aus. Das ist gut für Warburg.“
-                                                    </p>
+                                                    <div className="flex flex-col space-y-4">
+                                                        <p className="text-gray-600">
+                                                         Mein Sohn Kevin studiert Elektrotechnik in Gießen. Er strahlt eine große Ruhe und Gelassenheit aus – eine Eigenschaft, die ihn schon immer ausgezeichnet hat. Kevin genießt das Leben, hat dabei aber seine Ziele klar im Blick. Neben dem Studium engagiert er sich als Fußballschiedsrichter in der Region und bringt sich auch politisch aktiv ein.                                                    </p>
+                                                        <p className="text-gray-600">
+                                                          Als gelernter Elektroniker für Geräte- und Systemtechnik kann er sein Studium heute zum Teil selbst finanzieren – eine Leistung, auf die ich sehr stolz bin. Kevin unterstützt mich, wo er kann, und hat einen feinen Blick dafür, was im Leben zählt.                                                    </p>
+                                                        <p className="text-gray-600">
+                                                            Seine Worte bedeuten mir viel:                                                    </p>
+                                                        <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
+                                                            „Mein Vater übt das Amt mit Freude und Engagement aus. Das ist gut für Warburg."
+                                                        </blockquote>
+                                                    </div>
                                                     <br></br>
                                                     <img
                                                         src=" /gallery_images/IMG_8281.jpg"
@@ -165,6 +199,7 @@ export default function AboutMe() {
                                                         className="w-full md:w-1/4 rounded-xl md:ml-4 order-last"
                                                     />
                                                 </div>
+                                                <br></br>
                                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                                     <img
                                                         src=" /gallery_images/IMG_9195.jpg"
@@ -172,16 +207,37 @@ export default function AboutMe() {
                                                         className="w-full md:w-1/4 rounded-xl md:ml-4 order-last md:order-first"
                                                     />
                                                     <br></br>
-                                                    <p className="text-gray-600">
-                                                        Meine älteste Tochter Roxana liebt das Leben, unterstützt die Geschwister, hat einen klaren Blick und engagiert sich in vielen Bereichen. Sie tanzte gerne in der Prinzengarde und absolvierte ein Freiwilliges Soziales Jahr in der Karl-Preising-Schule in Bad Arolsen. An dieser inklusiven Schule mit lernschwachen und beeinträchtigten Kindern entdeckte sie ihre  Freude am Lehren . Heute studiert sie in Gießen Lehramt für Sonderpädagogik mit dem Hauptfach Mathematik. Zudem arbeitet sie hier bei uns im Jugenddorf in der Gruppenbetreuung und kann sich so ihr Studium mitfinanzieren. „Mein Vater hat sich immer Zeit für uns Kinder genommen trotz seines ehrenamtlichen Engagements und auch als Bürgermeister. Familie ist ihm sehr wichtig“, meint Roxana.
-                                                    </p>
+                                                    <div className="flex flex-col space-y-4">
+                                                        <p className="text-gray-600">
+                                                            Meine älteste Tochter Roxana liebt das Leben, ist offen für andere Menschen und übernimmt gerne Verantwortung – in der Familie ebenso wie in der Gesellschaft. Sie unterstützt ihre Geschwister mit Herz und Verstand und engagiert sich in vielen Bereichen. Früher tanzte sie begeistert in der Prinzengarde – und auch darüber hinaus war sie immer aktiv.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            Nach dem Abitur absolvierte sie ein Freiwilliges Soziales Jahr an der Karl-Preising-Schule in Bad Arolsen – einer inklusiven Schule mit lernschwachen und beeinträchtigten Kindern. Dort entdeckte sie ihre Leidenschaft fürs Lehren und Begleiten.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            Heute studiert Roxana Lehramt für Sonderpädagogik mit dem Hauptfach Mathematik in Gießen. Parallel arbeitet sie hier bei uns im Jugenddorf in der Gruppenbetreuung und finanziert sich so einen Teil ihres Studiums selbst.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            Sie sagt:                                                        </p>
+                                                        <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
+                                                            „Mein Vater hat sich immer Zeit für uns Kinder genommen – trotz seines ehrenamtlichen Engagements und auch als Bürgermeister. Familie ist ihm sehr wichtig."
+                                                        </blockquote>
+                                                    </div>
                                                     <br></br>
                                                 </div>
+                                                <br></br>
                                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                                     <br></br>
-                                                    <p className="text-gray-600">
-                                                        Riana hat den guten Blick für die Familie und ist die Kümmerin. Willensstärke zeichnet sie aus, sie kocht und backt gerne und schaut, dass es ihren Omas gutgeht.  Das Lesen von englischsprachigen Büchern ist ihr großes Hobby. Seit früher Kindheit tanzt sie in der Prinzengarde und ist Gardemädchen in der Großen Garde der Volkmarser Karnevalsgesellschaft.  Riana schließt dieses Jahr ihr Fachabitur mit Schwerpunkt Sozialwesen ab und möchte daran ein Freiwilliges Soziales Jahr (FSJ) anschließen. Sie ist großer Taylor Swift Fan und fand es toll, dass ich als Vater sie auf einem Konzert begleitet habe. Für Riana ist wichtig: „Damit mein Vater bei seinen vielen Terminen nichts vergisst, erinnere ich ihn manchmal daran, was bei uns so ansteht. Dann hat er die Familie und meine Oma gut im Blick und alle sind gut versorgt.“
-                                                    </p>
+                                                    <div className="flex flex-col space-y-4">
+                                                        <p className="text-gray-600">
+                                                            Riana hat ein feines Gespür für die Familie – sie ist unsere Kümmerin mit großem Herzen. Ihre Willensstärke beeindruckt mich immer wieder. Sie kocht und backt leidenschaftlich gerne und sorgt liebevoll dafür, dass es ihren Omas gutgeht. Ein besonderes Hobby von ihr ist das Lesen englischsprachiger Bücher – darin kann sie vollkommen eintauchen. Seit ihrer frühen Kindheit tanzt Riana in der Prinzengarde und ist heute aktives Gardemädchen in der Großen Garde der Volkmarser Karnevalsgesellschaft.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            Dieses Jahr schließt sie ihr Fachabitur mit dem Schwerpunkt Sozialwesen ab. Im Anschluss möchte sie ein Freiwilliges Soziales Jahr absolvieren – eine Entscheidung, die ihren sozialen Blick und ihr Verantwortungsbewusstsein unterstreicht.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                        Riana ist großer Taylor-Swift-Fan, und es war für uns beide ein tolles Erlebnis, gemeinsam ein Konzert zu besuchen – Vater und Tochter, mittendrin.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                            Sie sagt mit einem Augenzwinkern:                                                        </p>
+                                                        <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
+                                                            „Damit mein Vater bei seinen vielen Terminen nichts vergisst, erinnere ich ihn manchmal daran, was bei uns so ansteht. Dann hat er die Familie und meine Oma gut im Blick – und alle sind gut versorgt."
+                                                        </blockquote>
+                                                    </div>
                                                     <br></br>
                                                     <img
                                                         src=" /gallery_images/IMG_8985.jpg"
@@ -189,6 +245,7 @@ export default function AboutMe() {
                                                         className="w-full md:w-1/4 rounded-xl md:ml-4 md:order-last"
                                                     />
                                                 </div>
+                                                <br></br>
                                                 <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-4">
                                                     <img
                                                         src=" /gallery_images/IMG_6287.jpg"
@@ -196,9 +253,19 @@ export default function AboutMe() {
                                                         className="w-full md:w-1/4 rounded-xl md:ml-4 order-last md:order-first"
                                                     />
                                                     <br></br>
-                                                    <p className="text-gray-600">
-                                                        Lysandra hat als jüngste Kind gelernt, sich durchzusetzen. Sie probiert tausend Dinge aus, ist voller Leben und Fröhlichkeit. Sie fragt nicht, sondern macht einfach. Probieren geht bei ihr über studieren. Sie liebt Fußballspiele und Konzerte und spielt selbst Handball in der B-Jugend des TV Külte. Da ist sie Torwart und hat keine Angst vor dem Ball. Wer hinfällt, muss auch wieder aufstehen, ist ihr Motto. Familie, Freunde, Feiern sind ihr sehr wichtig. Zudem ist sie ehrgeizig und engagiert sich  in der Schule, etwa als Präfektin oder Klassensprecherin. In diesem Jahr wird sie einen einjährigen Highschool Aufenthalt in den USA absolvieren. Wow, was hat das Kind für einen Mut. Sie meint: „Schade, dass ich bei der Wahl von Papa nicht in Deutschland bin, ich unterstütze ihn so gerne. Einfach klasse, was er so alles für Jugendliche in Warburg macht.“
-                                                    </p>
+                                                    <div className="flex flex-col space-y-4">
+                                                        <p className="text-gray-600">
+                                                        Lysandra ist das jüngste unserer Kinder – und hat früh gelernt, sich durchzusetzen. Sie sprüht vor Energie, Lebensfreude und Neugier. Bei ihr heißt es: nicht lange fragen, einfach machen. Probieren geht über Studieren – das ist ihre Art, die Welt zu entdecken.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                        Sie liebt Fußballspiele und Konzerte, spielt selbst Handball in der B-Jugend des TV Külte – als mutige Torfrau, die dem Ball furchtlos entgegentritt. Ihr Motto: „Wer hinfällt, muss auch wieder aufstehen.“ Das lebt sie – im Sport wie im Alltag. Familie, Freunde und das gemeinsame Feiern sind ihr ebenso wichtig wie Engagement in der Schule. Ob als Präfektin oder Klassensprecherin – sie übernimmt Verantwortung mit Herz und Haltung.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                        In diesem Jahr steht ein großes Abenteuer bevor: Ein einjähriger Highschool-Aufenthalt in den USA. Ein mutiger Schritt, den sie mit Begeisterung geht – und auf den wir alle sehr stolz sind.                                                        </p>
+                                                        <p className="text-gray-600">
+                                                        Sie sagt:                                                        </p>
+                                                        <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
+                                                            „Schade, dass ich bei der Wahl von Papa nicht in Deutschland bin – ich unterstütze ihn so gerne. Einfach klasse, was er alles für Jugendliche in Warburg macht."
+                                                        </blockquote>
+                                                    </div>
                                                     <br></br>
                                                 </div>
                                             </div>
@@ -218,26 +285,24 @@ export default function AboutMe() {
                                         {isPartnershipOpen && (
                                             <div className="overflow-hidden transition-max-height duration-300" style={{ maxHeight: isPartnershipOpen ? 'none' : '0' }}>
                                                 <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
-                                                    "Glücklich allein ist die Seele, die liebt.“ "
+                                                    "Glücklich allein ist die Seele, die liebt." "
                                                     <footer className="text-sm mt-2">- Johann Wolfgang von Goethe</footer>
                                                 </blockquote>
                                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                                     <div className="flex flex-col space-y-4">
                                                         <p className="text-gray-600">
-                                                            Seit über drei Jahren ist Kathrin die Partnerin an meiner Seite. Kennengelernt dank meines Besuchs auf einem Seminar des Standesamtes in Bad Salzschlirf. Haben wir – der Bürgermeister und die die engagierte Diplom-Psychologin – uns gefunden und uns lieben gelernt. Geleitet durch gegenseitigen Respekt und Achtung wächst unsere Liebe und Partnerschaft.
-                                                        </p>
+                                                        Seit über drei Jahren ist Kathrin die Partnerin an meiner Seite. Dank eines Seminars des Standesamts in Bad Salzschlirf haben wir uns kennengelernt – der Bürgermeister und die engagierte Diplom-Psychologin. Aus dieser Begegnung ist eine tiefe Verbundenheit entstanden. Unsere Liebe wächst – getragen von gegenseitigem Respekt, Vertrauen und echter Wertschätzung.                                                        </p>
                                                         <p className="text-gray-600">
-                                                            Es ist nicht immer, einfach einen Bürgermeister als Partner zu haben, sind doch auch die Wochenenden geprägt von Termin und Aufgaben, da ich ja 24/7 im Amt bin. Zeitlichen Freiraum geben zu können und dennoch Zeit miteinander genießen zu dürfen, macht unsere Partnerschaft sicherlich aus. Daher freue ich mich immer sehr, wenn Kathrin die Zeit findet, mich bei Terminen zu begleiten und wir unser Interesse an den Menschen im Warburg Land gemeinsam zeigen können.
-                                                        </p>
+                                                        Einen Bürgermeister an seiner Seite zu haben, ist nicht immer leicht – auch die Wochenenden sind oft mit Terminen gefüllt, das Amt kennt keine festen Arbeitszeiten. Umso mehr schätze ich Kathrins Verständnis, ihre Offenheit und die Fähigkeit, mir Freiraum zu geben. Gleichzeitig genießen wir unsere gemeinsame Zeit ganz bewusst. Besonders schön ist es, wenn sie mich zu Terminen begleitet und wir unser gemeinsames Interesse an den Menschen im Warburger Land leben können.                                                        </p>
                                                         <p className="text-gray-600">
-                                                            Wandern ist unsere große Leidenschaft. die wir oft auch gemeinsam genießen können. Wir sind beide von Kunst, Kultur und Konzerten begeistert und genießen unsere Hobbies gerne gemeinsam. Reisen rundet unsere Liebe zur Welt und den Menschen ab und so versuchen wir – trotz meiner terminlichen Verpflichtungen - auch Auszeiten gemeinsam oder mit den Kindern, die wir beide in die Partnerschaft einbringen, zu verbringen.
-                                                        </p>
+                                                        Wandern ist unsere große Leidenschaft – in der Natur tanken wir Kraft und Ruhe. Auch Kunst, Kultur und Konzerte begeistern uns beide. Unsere Hobbys teilen wir mit Freude, und das Reisen verbindet uns – ob zu zweit oder mit den Kindern, die wir beide in unsere Partnerschaft mitgebracht haben.                                                        </p>
                                                         <p className="text-gray-600">
-                                                            Für Kathrin ist wichtig, dass wir eine Beziehung leben, in der Gleichberechtigung, Entwicklungsräume und gegenseitiger Verantwortung großgeschrieben sind.
-                                                        </p>
+                                                        Für Kathrin ist es wichtig, dass unsere Beziehung auf Gleichberechtigung, persönlichem Wachstum und gegenseitiger Verantwortung beruht.                                                        </p>
                                                         <p className="text-gray-600">
-                                                            „Tobias ist ein Mann, der Frauen nicht diskriminiert und kleinhält und deren Notwendigkeiten im Blick hat. In Warburg setzt er sich für Gleichberechtigung in Verwaltung und Rat ein und versteht, wie wichtig gut ausgestattete Kindergärten, Schulen, Vereine und kulturelle Angebote für das Wohl aller Einwohner ist,“ so Kathrin.
-                                                        </p>
+                                                        Sie sagt:                                                        </p>
+                                                        <blockquote className="italic text-gray-600 border-l-4 border-primary pl-4 my-4">
+                                                            „Tobias ist ein Mann, der Frauen nicht diskriminiert oder kleinmacht – er hat ihre Bedürfnisse im Blick. In Warburg setzt er sich für Gleichberechtigung in Verwaltung und Stadtrat ein. Er versteht, wie wichtig gut ausgestattete Kindergärten, Schulen, Vereine und kulturelle Angebote für das Wohl aller Bürgerinnen und Bürger sind."
+                                                        </blockquote>
                                                     </div>
                                                     <br></br>
                                                     <img
@@ -260,7 +325,7 @@ export default function AboutMe() {
                             event.preventDefault();
                             setIsEducationOpen(!isEducationOpen);
                         }}>
-                            Ausbildung und beruflicher Werdegang
+                            Mein Bildungsweg und der Blick über den Tellerrand
                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isEducationOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                 &#9660;
                             </span>
@@ -274,8 +339,7 @@ export default function AboutMe() {
                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                     <div className="flex flex-col space-y-4">
                                         <p className="text-gray-600">
-                                            Meine Allgemeine Hochschulreife (Abitur mit Fachrichtung Wirtschaft)  erlangte ich am Johann-Conrad-Schlaun-Kolleg in Warburg . Schon damals habe ich die Menschen der Stadt Warburg und der Dörfer geschätzt, deren Bürgermeister ich dreißig Jahre später geworden bin.
-                                        </p>
+                                        Meine Allgemeine Hochschulreife mit Fachrichtung Wirtschaft habe ich am Johann-Conrad-Schlaun-Kolleg in Warburg erworben. Schon damals habe ich die Menschen in Warburg und den umliegenden Dörfern sehr geschätzt – kaum zu ahnen, dass ich rund 30 Jahre später ihr Bürgermeister werden würde.                                        </p>
                                     </div>
                                     <br></br>
                                     <img
@@ -286,16 +350,18 @@ export default function AboutMe() {
                                 </div>
                                 <p className="text-gray-600">
                                     <br></br>
-                                    Nach Ausbildung und Berufstätigkeit als Versicherungskaufmann beim Gerling-Konzern in Kassel und Korbach, strebte ich nach Weiterentwicklung und begann ein Studium der Wirtschaftswissenschaften in Kassel mit dem Schwerpunkt „Personal und Arbeitsökonomie“. Schon damals lag es mir am Herzen, Menschen gut zu führen und Entwicklungskonzepte für Menschen in Unternehmen zu finden. „Lean Management in der öffentlichen Verwaltung“ war der Titel meiner ersten Diplomarbeit. „Wie kann man Verwaltung besser, effizienter, menschenfreundlicher machen?“, ist auch heute für mich als Bürgermeister eine der wichtigen Fragestellungen.
-                                </p>
+                                    Nach einer Ausbildung und mehrjähriger Berufstätigkeit als Versicherungskaufmann beim Gerling-Konzern in Kassel und Korbach wuchs in mir der Wunsch nach Weiterentwicklung. Ich entschied mich für ein Studium der Wirtschaftswissenschaften in Kassel mit dem Schwerpunkt „Personal und Arbeitsökonomie“. Schon damals war mir wichtig, wie gute Führung gelingt und wie man Menschen in Unternehmen sinnvoll begleiten und fördern kann. Meine erste Diplomarbeit widmete ich dem Thema: „Lean Management in der öffentlichen Verwaltung“. Die Frage, wie man Verwaltung effizienter, bürgernäher und menschlicher gestalten kann, beschäftigt mich bis heute – auch als Bürgermeister.                                </p>
                                 <br></br>
                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                     <div className="flex flex-col space-y-4">
 
                                         <p className="text-gray-600">
-                                            Ein Teil meines Studiums verbrachte ich in den USA,in Washington D.C.. Im Zentrum der amerikanischen Politik konnte ich mein Interesse an Politik, der Welt und den Menschen kombinieren und lebte unweit des berühmten Watergate-Gebäudekomplex. Hier konnte ich mich sprachlich und menschlich weiterentwickeln, die Vielfältigkeit anderen Kulturen erfahren und bei Greenpeace U.S. ein Praktikum machen. Meine „Master“-Arbeit: „Human Ressource & Cross Culture Management“ konnte ich durch diese Erfahrungen mit sehr gutem Ergebnis abschließen. Meine Zeit in Amerika ermöglichte mir einen weltoffenen und toleranten Blick auf das  menschliche Miteinander und kommt mir auch heute noch bei meiner Arbeit als Bürgermeister zugute.
+                                        Ein prägender Abschnitt meines Studiums führte mich in die USA – nach Washington, D.C. Dort, im politischen Zentrum der Vereinigten Staaten, konnte ich mein Interesse an Politik, Gesellschaft und interkulturellem Austausch voll ausleben. Ich lebte unweit des bekannten Watergate-Komplexes, absolvierte ein Praktikum bei Greenpeace U.S. und entwickelte mich sowohl sprachlich als auch persönlich weiter. Die Vielfalt der Kulturen, die Offenheit und die Energie dieses Ortes haben meinen Horizont nachhaltig erweitert.                                        </p>
+                                        <p className="text-gray-600">
+                                        Meine Abschlussarbeit zum Thema „Human Resource & Cross Culture Management“ konnte ich mit Bestnote abschließen – nicht zuletzt dank der Erfahrungen, die ich in Amerika sammeln durfte. Der weltoffene und tolerante Blick auf das Miteinander, den ich dort entwickelt habe, prägt meine Haltung bis heute – gerade in meiner Rolle als Bürgermeister.                                                      
                                         </p>
                                     </div>
+                                    
                                     <br></br>
                                     <img
                                         src=" /gallery_images/University.jpg"
@@ -311,7 +377,7 @@ export default function AboutMe() {
                                             event.preventDefault();
                                             setisProfessionOpen(!isProfessionOpen);
                                         }}>
-                                            Beruf als Berufung
+                                            Mein beruflicher Weg – von Verantwortung getragen
                                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isProfessionOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                                 &#9660;
                                             </span>
@@ -319,20 +385,18 @@ export default function AboutMe() {
                                         {isProfessionOpen && (
                                             <div className="overflow-hidden transition-max-height duration-300" style={{ maxHeight: isProfessionOpen ? 'none' : '0' }}>
                                                 <p className="text-gray-600">
-                                                    Nach dem Studium wurde ich gleich ins kalte Wasser geworfen: Das Amt als Geschäftsführer der CDU-Kassel-Land und Kassel-Stadt prägten meine politischen Erfahrungen. In 1 ½ Jahren  managte ich erfolgreich eine Oberbürgermeisterwahl und die Landtagswahl in Kassel. Aufgrund meines erfolgreichen Wirkens wurde ich zum Persönlichen Referenten des hessischen Ministers für Umwelt, Landwirtschaft und Forsten, Wilhelm Dietzel berufen. Im Wiesbadener Büro war ich zuständig für den reibungslosen Ablauf der Ministertätigkeit, der Besprechung und Planung von Projekten gemeinsam mit dem Minister am Rande des Landtagsplenum, sowie Ansprechpartner für die Staatsweingüter und das Kloster Eberbach in Eltville. Bis zu meiner Bürgermeisterwahl waren dies beruflich die schönsten und herausforderndsten Jahre. Wilhelm Dietzel, erlebte ich als einen Minister, der menschlich handelt, gutes politisches Gespür hat und von dem ich  einen klaren , kooperativen Führungsstill lernen durfte.
-                                                </p>
+                                                Nach dem Studium wurde ich direkt ins kalte Wasser geworfen: Als Geschäftsführer der CDU Kassel-Land und Kassel-Stadt konnte ich erste intensive politische Erfahrungen sammeln. In anderthalb Jahren organisierte und begleitete ich erfolgreich eine Oberbürgermeisterwahl sowie die Landtagswahl in Kassel. Diese Zeit war prägend – sie forderte mich heraus und bestätigte zugleich meinen Weg in der Politik.                                                </p>
                                                 <p className="text-gray-600">
-                                                    Mit der Gründung meiner Familie ging es im Jahr 2003 beruflich zurück in unsere Region. In Kassel war ich ab 2003 im Bereich Landwirtschaft für Controlling, Finanzen, Öffentlichkeitsarbeit und viele Projekte zuständig. Wir entwickelten damals den Landesbetrieb Landwirtschaft zu einem modernen Dienstleister für Beratung, Bildung, Fachinformationen für den ländlichen Raum.
-                                                </p>
+                                                Aufgrund meines Engagements und der erfolgreichen Arbeit wurde ich zum Persönlichen Referenten des hessischen Ministers für Umwelt, Landwirtschaft und Forsten, Wilhelm Dietzel, berufen. In Wiesbaden war ich für die Koordination seiner Amtsgeschäfte, Projektabsprachen am Rande der Landtagsplenarsitzungen sowie für die Staatsweingüter und das Kloster Eberbach in Eltville zuständig. Diese Jahre waren – beruflich wie persönlich – besonders erfüllend. Von Wilhelm Dietzel habe ich viel gelernt: Menschlichkeit, politisches Fingerspitzengefühl und einen klaren, kooperativen Führungsstil.                                                </p>
+                                                <p className="text-gray-600">
+                                                Mit der Gründung meiner Familie zog es mich 2003 zurück in unsere Region. In Kassel übernahm ich beim Landesbetrieb Landwirtschaft Verantwortung für Controlling, Finanzen, Öffentlichkeitsarbeit und vielfältige Projekte. Gemeinsam mit einem engagierten Team entwickelten wir den Betrieb zu einem modernen Dienstleister für Beratung, Bildung und Fachinformationen im ländlichen Raum weiter.                                                </p>
                                                 <br></br>
                                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                                     <div className="flex flex-col space-y-4">
                                                         <p className="text-gray-600">
-                                                            Im Jahr 2018 wurde mir die sehr große Ehre zuteil, vom hessischen Ministerpräsidenten Volker Bouffier persönlich zum Regionalbeauftragten für Nordhessen berufen zu werden. Er schätze meine Kompetenz, meinen Willen Ideen voranzubringen und sah dies Aufgabe gut bei mir betraut. Als Leuchtturm für Nordhessen beriet ich von nun an Bürgermeister von Bad Karlshafen bis Marburg über Förderprogramme der Landesregierung im Ländlichen Raum, überreichte Förderbescheide und war bis zu meiner Wahl als Bürgermeister Teil der Offensive „Land hat Zukunft“.
-                                                        </p>
+                                                        2018 wurde mir eine besondere Ehre zuteil: Der damalige hessische Ministerpräsident Volker Bouffier berief mich persönlich zum Regionalbeauftragten für Nordhessen. In dieser Funktion durfte ich Bürgermeisterinnen und Bürgermeister – von Bad Karlshafen bis Marburg – beraten, Förderprogramme des Landes vorstellen, Bescheide überreichen und Teil der Initiative „Land hat Zukunft“ sein. Es war eine Aufgabe mit Weitblick, Gestaltungsspielraum und viel Nähe zu den Menschen und den Themen der Region.                                                        </p>
                                                         <p className="text-gray-600">
-                                                            All dies hat mir sehr geholfen, mein Amt als Bürgermeister der Hansestadt Warburg am 1.November 2020 anzutreten und die Erfordernisse von Dörfern und Kernstadt unserer schönen Heimatstadt einschätzen und zukunftsfähig zu machen.
-                                                        </p>
+                                                        All diese Erfahrungen haben mir geholfen, mich gut vorbereitet und mit vollem Herzen in das Amt als Bürgermeister der Hansestadt Warburg zu begeben, das ich seit dem 1. November 2020 ausübe. Ich kenne die Herausforderungen und Chancen, die unsere Dörfer und die Kernstadt mit sich bringen – und arbeite jeden Tag daran, unsere schöne Heimat zukunftsfähig weiterzuentwickeln.                                                        </p>
                                                         <br></br>
                                                     </div>
                                                     <img
@@ -380,7 +444,7 @@ export default function AboutMe() {
                                                 <br></br>
                                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                                     <p className="text-gray-600">
-                                                        Über 14 Jahre lang leitete ich den Volkmarser CDU-Stadtverband und entwarf gemeinsam mit meinen Mitstreiteren, insbesondere Thomas Viesehon, das Format „Politischer Aschermittwoch“. Der Volkmarser „Politische Aschermittwoch“ war überregional bekannt und prominente Gäste waren jährlich an der Tagesordnung. Ob Friedrich Merz, Ministerpräsidenten wie Roland Koch, Volker Bouffier, Thomas Müller, Christian Wulff, Horst Seehofer, Minister wie Thomas de Maizière. Jährlich kamen mehrere tausend Besuchernach Volkmarsen zu dieser Veranstaltung und Höhepunkte waren die Besuche von Bundeskanzlerin Angela Merkel, bei der damals über 3.300 Besucher in der Nordhessenhalle anwesend waren.
+                                                        Über 14 Jahre lang leitete ich den Volkmarser CDU-Stadtverband und entwarf gemeinsam mit meinen Mitstreiteren, insbesondere Thomas Viesehon, das Format "Politischer Aschermittwoch". Der Volkmarser "Politische Aschermittwoch" war überregional bekannt und prominente Gäste waren jährlich an der Tagesordnung. Ob Friedrich Merz, Ministerpräsidenten wie Roland Koch, Volker Bouffier, Thomas Müller, Christian Wulff, Horst Seehofer, Minister wie Thomas de Maizière. Jährlich kamen mehrere tausend Besuchernach Volkmarsen zu dieser Veranstaltung und Höhepunkte waren die Besuche von Bundeskanzlerin Angela Merkel, bei der damals über 3.300 Besucher in der Nordhessenhalle anwesend waren.
                                                     </p>
                                                     <br></br>
                                                     <img
@@ -407,7 +471,7 @@ export default function AboutMe() {
                             event.preventDefault();
                             setIsMayorOpen(!isMayorOpen);
                         }}>
-                            Unser Bürgermeister für alle
+                            Bürgermeister mit Herz und Haltung
                             <span className="ml-2 transition-transform transform" style={{ display: 'inline-block', transform: isMayorOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                                 &#9660;
                             </span>
@@ -421,15 +485,13 @@ export default function AboutMe() {
                                 <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
                                     <div className="flex flex-col space-y-4">
                                         <p className="text-gray-600">
-                                            Seit dem 1. November 2020 bin ich mit viel Freude, Menschlichkeit, Tatkraft und Führungsstärke Bürgermeister der schönen Hansestadt Warburg mit  ihrer faszinierenden Kernstadt und  den 15 wunderschönen Dörfern.
-                                        </p>
+                                        Seit dem 1. November 2020 bin ich aus voller Überzeugung Bürgermeister der Hansestadt Warburg – und dabei führungsstark, innovativ und tatkräftig für die Menschen in unserer lebendigen Kernstadt und den 15 wunderschönen Dörfern im Einsatz.                                        </p>
                                         <p className="text-gray-600">
-                                            Trotz aller Herausforderungen,  mancher Anfeindungen aus der Politik,  mancher Unzufriedenheit einzelner Bürger ist es für mich nach wie vor der schönste Job, den ich in meiner vielfältigen Karriere ausgeführt habe. Tagtäglich erfahre ich die breite Zustimmung und Dankbarkeit der Mitbürger zu meiner Arbeit. Dies bestärkt mich in meiner Haltung und meinem Engagement. Ich bin gekommen, um zu bleiben!
-                                        </p>
+                                        Trotz mancher Herausforderungen, politischer Anfeindungen oder der Kritik Einzelner ist und bleibt dieses Amt für mich der schönste und sinnstiftendste Beruf, den ich je ausüben durfte. Die Zustimmung und das Vertrauen vieler Mitbürgerinnen und Mitbürger bestärken mich täglich in meiner Arbeit. Ich bin gekommen, um zu bleiben!                                        </p>
                                         <p className="text-gray-600">
-                                            Noch keinen Tag bereute ich meine Entscheidung zur Amtsübernahme. Nach wie vor gehe ich  jeden Tag gerne zur Arbeit, freue mich über das Engagement der Mitarbeitenden im Rathaus, in den Stadtwerken in den Kommunalunternehmen Warburg (KUW), treffe gerne die Menschen in unserer schönen Stadt und engagiere mich mit Freude für die Dörfer.
-                                            Dabei ist es mir wichtig, unsere Stadt im Team gemeinsam mit den Menschen unsere Stadt zu entwickeln, als Ideengeber voranzuschreiten, das finanziell machbare im Blick zu behalten, bei den Fördergeldern immer einen Schritt voraus zu sein, konstruktiv die Verwaltung zu führen und unsere Stadt und die Dörfer zukunftsfähig zu machen.
-                                        </p>
+                                        Keinen einzigen Tag habe ich meine Entscheidung bereut. Ich gehe mit Begeisterung zur Arbeit, freue mich über das Engagement der Mitarbeitenden in Rathaus, Stadtwerken und Kommunalunternehmen Warburg (KUW), bin gerne vor Ort in den Ortsteilen unterwegs und treffe Menschen, die unsere Stadt mittragen und mitgestalten.                                        </p>
+                                        <p className="text-gray-600">
+                                        Dabei ist es mir besonders wichtig, gemeinsam mit den Bürgerinnen und Bürgern an der Weiterentwicklung unserer Stadt zu arbeiten. Ich will Impulse setzen, finanziell Machbares realisieren, Fördergelder gezielt nutzen, die Verwaltung konstruktiv führen und Warburg mit all seinen Ortsteilen zukunftsfähig gestalten.                                        </p>
                                     </div>
                                     <br></br>
                                     <img
@@ -445,16 +507,16 @@ export default function AboutMe() {
                                     </h4>
                                     <ul className="list-disc list-inside space-y-2 text-gray-600 pl-4">
                                         <li>
-                                            <span className="text-primary font-bold">Christlicher Demokrat im Herzen</span> mit Menschlichkeit und christlich & sozialen Werten
+                                            <span className="text-primary font-bold">Christlicher Demokrat mit Herz:</span> Menschlich, werteorientiert, sozial
                                         </li>
                                         <li>
-                                            <span className="text-primary font-bold">Warburger aus Leidenschaft</span> und erhalte und gestalte gerne die Schönheit der Stadt & der Dörfer
+                                            <span className="text-primary font-bold">Warburger aus Leidenschaft:</span> Ich bewahre und gestalte die Schönheit unserer Stadt und Dörfer
                                         </li>
                                         <li>
-                                            <span className="text-primary font-bold">Visionär/Gestalter der Zukunft</span> mit dem Gestaltungswillen, unsere Region kraftvoll zukunftsfähig voranzubringen
+                                            <span className="text-primary font-bold">Visionär & Gestalter: </span> Mit Mut und Ideen die Zukunft unserer Region kraftvoll voranbringen
                                         </li>
                                         <li>
-                                            <span className="text-primary font-bold">Macher mit Zielen</span> mit dem Willen zur zeitnahen Umsetzung und effizienten Verwirklichung in den unterschiedlichen Bereichen
+                                            <span className="text-primary font-bold">Macher mit Zielen:</span> Effizient, entschlossen, lösungsorientiert
                                         </li>
                                     </ul>
                                 </div>
@@ -468,10 +530,7 @@ export default function AboutMe() {
                                 </p>
                                 <br></br>
                                 <p className="text-gray-600">
-                                    Unser Bürgermeister für alle
-                                </p>
-                                <p className="text-primary">
-                                    <b>führungsstark & wegweisend</b>
+                                Unser Bürgermeister für Warburg – führungsstark, innovativ, tatkräftig
                                 </p>
                             </div>
                         )}
