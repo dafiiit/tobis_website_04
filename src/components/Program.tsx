@@ -102,7 +102,7 @@ const programs = [
     description:
       'Klarer Kurs für Vielfalt in Warburger Kultur, Sport und Ehrenamt',
     image:
-      '/images_program/Schuetzenfest.jpeg',
+      '/images_program/schlecht.jpeg',
     details: `
       ### "Engagement würdigen – Ehrenamt stärken."
       Menschen und Vereine sind das Rückgrat unserer Stadt. Ich unterstütze ihr Engagement aktiv – sei es im Sport, in den Dörfern oder bei der Jugendarbeit.

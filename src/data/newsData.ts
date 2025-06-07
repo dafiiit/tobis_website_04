@@ -69,7 +69,7 @@ export const newsData = [
     id: 5,
     title: 'Feuerwehr stärken. Sicherheit gewährleisten.',
     description: 'Mein Einsatz für den Brandschutz in Warburg',
-    image: '/images_milestones/FreiwilligeFeuerwehr.jpg',
+    image: '/images_milestones/Tobias_Feuerwehr.png',
     content: `<p>Als Bürgermeister der Hansestadt Warburg habe ich mich konsequent dafür eingesetzt, den Investitionsstau bei unseren Feuerwehren abzubauen. Die Sicherheit unserer Bürgerinnen und Bürger hat für mich höchste Priorität. Daher habe ich umfassende Maßnahmen ergriffen, um die Ausstattung und Infrastruktur unserer Feuerwehren zu modernisieren und zukunftsfähig zu gestalten.</p>
     <p><strong>Modernisierung der Feuerwehrgerätehäuser</strong><br />
     In den vergangenen Jahren wurden mehrere Feuerwehrgerätehäuser in Warburg und den Ortsteilen modernisiert oder neu gebaut:</p>
