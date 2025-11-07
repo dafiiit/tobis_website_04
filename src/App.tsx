@@ -6,12 +6,14 @@ import Vision from './components/Vision';
 import ProgramAndNews from './components/ProgramAndNews';
 import Contact from './components/Contact';
 import AboutMe from './components/AboutMe';
+import ThankYou from './components/ThankYou';
 import Impressum from './components/Impressum';
 
 function Home() {
   return (
     <>
       <Hero />
+      <ThankYou />
       <Vision />
       <ProgramAndNews />
       <AboutMe />
