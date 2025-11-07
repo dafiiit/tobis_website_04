@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FileText, ExternalLink, PlayCircle, Globe } from 'lucide-react';
 
 export default function ThankYou() {
-    const [selectedImage, setSelectedImage] = useState<string | null>(null);
+    const [selectedMedia, setSelectedMedia] = useState<string | null>(null);
 
     // PDF file names
     const pdfFiles = {
@@ -17,13 +17,21 @@ export default function ThankYou() {
         ).join('/');
     };
 
-    // List of images from winner_images folder (excluding .mov file)
-    const winnerImages = [
+    // Helper function to check if file is a video
+    const isVideo = (file: string) => {
+        return file.toLowerCase().endsWith('.mov') || 
+               file.toLowerCase().endsWith('.mp4') || 
+               file.toLowerCase().endsWith('.webm') || 
+               file.toLowerCase().endsWith('.ogg');
+    };
+
+    // List of media from winner_images folder (video first, then images)
+    const winnerMedia = [
+        '/winner_images/video.mov', // Video first
         '/winner_images/449c708c-080e-48d9-9c73-0772f5c076be.jpeg',
         '/winner_images/84150ce2-2cda-442a-ade3-ed3ef51b9b21.jpeg',
         '/winner_images/93620a6a-7230-4c39-be8b-f92ee909b5e9.jpeg',
         '/winner_images/cc72d813-dddf-4671-89d4-471f15b556a0.jpeg',
-        '/winner_images/IMG_0088 2.jpeg',
         '/winner_images/IMG_0088.jpeg',
         '/winner_images/IMG_0092.jpeg',
         '/winner_images/IMG_0105.jpeg',
@@ -137,32 +145,49 @@ export default function ThankYou() {
                         Bildergalerie
                     </h3>
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {winnerImages.map((image, index) => (
-                            <div
-                                key={index}
-                                className="relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105"
-                                onClick={() => setSelectedImage(image)}
-                            >
-                                <img
-                                    src={image}
-                                    alt={`Wahlbild ${index + 1}`}
-                                    className="w-full h-48 object-cover"
-                                />
-                            </div>
-                        ))}
+                        {winnerMedia.map((media, index) => {
+                            const isVideoFile = isVideo(media);
+                            return (
+                                <div
+                                    key={index}
+                                    className="relative overflow-hidden rounded-lg cursor-pointer transition-transform duration-300 hover:scale-105 group"
+                                    onClick={() => setSelectedMedia(media)}
+                                >
+                                    {isVideoFile ? (
+                                        <div className="relative w-full h-48 bg-gray-800 flex items-center justify-center">
+                                            <video
+                                                src={media}
+                                                className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+                                                muted
+                                                playsInline
+                                            />
+                                            <div className="absolute inset-0 flex items-center justify-center">
+                                                <PlayCircle className="w-16 h-16 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                                            </div>
+                                        </div>
+                                    ) : (
+                                        <img
+                                            src={media}
+                                            alt={`Wahlbild ${index + 1}`}
+                                            className="w-full h-48 object-cover"
+                                        />
+                                    )}
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 
-                {/* Image Modal */}
-                {selectedImage && (
+                {/* Media Modal */}
+                {selectedMedia && (
                     <div
                         className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50"
-                        onClick={() => setSelectedImage(null)}
+                        onClick={() => setSelectedMedia(null)}
                     >
-                        <div className="relative max-w-4xl max-h-full">
+                        <div className="relative max-w-4xl max-h-full w-full">
                             <button
-                                onClick={() => setSelectedImage(null)}
-                                className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition-colors"
+                                onClick={() => setSelectedMedia(null)}
+                                className="absolute top-4 right-4 text-white bg-black bg-opacity-50 rounded-full p-2 hover:bg-opacity-75 transition-colors z-10"
                             >
                                 <svg
                                     className="w-6 h-6"
@@ -178,12 +203,24 @@ export default function ThankYou() {
                                     />
                                 </svg>
                             </button>
-                            <img
-                                src={selectedImage}
-                                alt="Große Ansicht"
-                                className="max-w-full max-h-[90vh] object-contain rounded-lg"
-                                onClick={(e) => e.stopPropagation()}
-                            />
+                            {isVideo(selectedMedia) ? (
+                                <video
+                                    src={selectedMedia}
+                                    controls
+                                    autoPlay
+                                    className="max-w-full max-h-[90vh] rounded-lg"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    Ihr Browser unterstützt das Video-Tag nicht.
+                                </video>
+                            ) : (
+                                <img
+                                    src={selectedMedia}
+                                    alt="Große Ansicht"
+                                    className="max-w-full max-h-[90vh] object-contain rounded-lg"
+                                    onClick={(e) => e.stopPropagation()}
+                                />
+                            )}
                         </div>
                     </div>
                 )}
